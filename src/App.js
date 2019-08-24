@@ -9,7 +9,7 @@ function App() {
       <div className="col-12" style={{ textAlign: "center" }}>
 
         <div>
-          <img src={require('./assets/images/logo_upself.svg')} height="250" alt="logo" />
+          <img src={require('./assets/images/logo_upself.svg')} width="350" alt="logo" />
         </div>
 
         <div>
@@ -22,8 +22,10 @@ function App() {
 
 
       <div className="col-12" style={{ textAlign: "center" }}>
-        <img id="applink" style={{ opacity: 1 }} src={require('./assets/images/app_store_badge.png')} height="50" alt="appstore" />
-        <img id="applink" style={{ opacity: 1 }} src={require('./assets/images/google_play_badge.png')} height="50" alt="googleplay" />
+        <div style={{ border: "200px"}} >
+          <img id="applink" style={{ opacity: 1, margin: "5px" }} src={require('./assets/images/app_store_badge.png')} height="40" alt="appstore" />
+          <img id="applink" style={{ opacity: 1, margin: "5px" }} src={require('./assets/images/google_play_badge.png')} height="40" alt="googleplay" />
+        </div>
       </div>
 
 
