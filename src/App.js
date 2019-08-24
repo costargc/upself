@@ -13,15 +13,21 @@ function App() {
         </div>
 
         <div>
-          Everybody could use someone like me
+          Hey I'm Upsy! I'm here the make your day better!
         </div>
 
       </div>
+
+
+
 
       <div className="col-12" style={{ textAlign: "center" }}>
         <img id="applink" style={{ opacity: 1 }} src={require('./assets/images/app_store_badge.png')} height="50" alt="appstore" />
         <img id="applink" style={{ opacity: 1 }} src={require('./assets/images/google_play_badge.png')} height="50" alt="googleplay" />
       </div>
+
+
+
 
     </main>
 
