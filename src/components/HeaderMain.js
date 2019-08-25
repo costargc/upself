@@ -22,9 +22,9 @@ function header() {
         <h4>  I'm here the make your day better! </h4>
       </div>
 
-      <div class="stage">
-        <div class="box bounce-7">
-          <img src={require('../assets/images/upsy_emo/upsy1_emo7.svg')} width="200" alt="logo" />
+      <div className="stage">
+        <div className="box bounce-7">
+          <img src={require('../assets/images/upsy_emo/upsy1_emo6.svg')} width="200" alt="logo" />
         </div>
       </div>
 
