@@ -24,7 +24,7 @@ function header() {
 
       <div class="stage">
         <div class="box bounce-7">
-          <img src={require('../assets/images/upsy_emo/upsy1_emo7.svg')} width="200" alt="logo" />
+          <img src={require('../assets/images/upsy_emo/upsy1_emo3.svg')} width="200" alt="logo" />
         </div>
       </div>
 
