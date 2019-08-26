@@ -27,7 +27,7 @@ function WhatUpsyDo() {
                     <img className='' src={require('../assets/images/check/check2.svg')} height='50px' alt="check" />
                 </div>
                 <div className="col-8" style={{ alignContent: "center", verticalAlign: "middle", fontSize: "25px", float: "left" }}>
-                    Upsy can give you a emergency complement! <span style={{ fontSize: "12px" }}>(we all need that)</span>
+                    Upsy can give you an emergency complement! <span style={{ fontSize: "12px" }}>(we all need that)</span>
                 </div>
                 <div className="col-md-1"></div>
             </div>

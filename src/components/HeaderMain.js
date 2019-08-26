@@ -10,7 +10,7 @@ function header() {
       textAlign: "center",
       paddingTop: "75px",
       paddingBottom: "75px",
-      backgroundColor: "#f4f6f8"
+      backgroundColor: "#f2f2f2"
     }}>
 
       <div>
