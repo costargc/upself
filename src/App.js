@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "./assets/css/App.css";
-import HeaderMain from "./components/HeaderMain";
-import TechUsed from "./components/TechUsed";
-import WhatUpsyDo from "./components/WhatUpsyDo";
+import "App.css";
+import HeaderMain from "./components/Landing/Landing";
+import TechUsed from "./components/TechUsed/TechUsed";
+import WhatUpsyDo from "./components/WhatUpsyDo/WhatUpsyDo";
 import { Widget } from "react-chat-widget";
 
 class App extends Component {
