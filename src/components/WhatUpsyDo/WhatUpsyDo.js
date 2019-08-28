@@ -1,6 +1,5 @@
 import React from "react";
-import "../assets/css/App.css";
-import "../assets/css/HoverTech.css";
+import "../TechUsed/HoverTech.css";
 
 function WhatUpsyDo() {
   return (
@@ -31,7 +30,7 @@ function WhatUpsyDo() {
         <div className="col-2" style={{ textAlign: "right" }}>
           <img
             className=""
-            src={require("../assets/images/check/check2.svg")}
+            src={require("../../assets/images/check/check2.svg")}
             height="50px"
             alt="check"
           />
@@ -63,7 +62,7 @@ function WhatUpsyDo() {
         <div className="col-2" style={{ textAlign: "right" }}>
           <img
             className=""
-            src={require("../assets/images/check/check4.svg")}
+            src={require("../../assets/images/check/check4.svg")}
             height="50px"
             alt="check"
           />
@@ -94,7 +93,7 @@ function WhatUpsyDo() {
         <div className="col-2" style={{ textAlign: "right" }}>
           <img
             className=""
-            src={require("../assets/images/check/check5.svg")}
+            src={require("../../assets/images/check/check5.svg")}
             height="50px"
             alt="check"
           />
@@ -125,7 +124,7 @@ function WhatUpsyDo() {
         <div className="col-2" style={{ textAlign: "right" }}>
           <img
             className=""
-            src={require("../assets/images/check/check3.svg")}
+            src={require("../../assets/images/check/check3.svg")}
             height="50px"
             alt="check"
           />
@@ -158,7 +157,7 @@ function WhatUpsyDo() {
       >
         <img
           className=""
-          src={require("../assets/images/upsy_friend.svg")}
+          src={require("../../assets/images/upsy_friend.svg")}
           width="90%"
           alt="check"
         />

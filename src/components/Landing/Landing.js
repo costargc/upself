@@ -1,8 +1,7 @@
 import React from "react";
-import "../assets/css/App.css";
-import "../assets/css/Bounce_upsy.css";
+import "./Bounce_upsy.css";
 
-function header() {
+function Landing() {
   return (
     <div
       className="col-12"
@@ -15,7 +14,7 @@ function header() {
     >
       <div>
         <img
-          src={require("../assets/images/logo_upself.svg")}
+          src={require("../../assets/images/logo_upself.svg")}
           width="350"
           alt="logo"
         />
@@ -29,7 +28,7 @@ function header() {
       <div className="stage">
         <div className="box bounce-7">
           <img
-            src={require("../assets/images/upsy_emo/upsy1_emo3.svg")}
+            src={require("../../assets/images/upsy_emo/upsy1_emo3.svg")}
             width="200"
             alt="logo"
           />
@@ -44,14 +43,14 @@ function header() {
           <img
             id="applink"
             style={{ opacity: 1, margin: "5px" }}
-            src={require("../assets/images/app_store_badge.png")}
+            src={require("../../assets/images/app_store_badge.png")}
             height="40"
             alt="appstore"
           />
           <img
             id="applink"
             style={{ opacity: 1, margin: "5px" }}
-            src={require("../assets/images/google_play_badge.png")}
+            src={require("../../assets/images/google_play_badge.png")}
             height="40"
             alt="googleplay"
           />
@@ -61,4 +60,4 @@ function header() {
   );
 }
 
-export default header;
+export default Landing;
