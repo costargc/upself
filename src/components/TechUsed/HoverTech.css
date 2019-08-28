@@ -1,0 +1,21 @@
+/* START START START home page - block 4 TECH USED */
+.techUsed{
+    padding: 25px 35px 25px 35px;
+    margin: auto;
+    align-content: center;
+    filter: grayscale(1);
+}
+
+.techUsed:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+@media (min-width: 991px) {
+.container{
+    width: 991px;
+    /* background-color: black; */
+}
+
+}
+/* END END END home page - block 4 */
