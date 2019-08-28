@@ -6,16 +6,15 @@ import WhatUpsyDo from "./components/WhatUpsyDo/WhatUpsyDo";
 
 import {
   Widget,
-  addResponseMessage,
-  addLinkSnippet,
-  addUserMessage
+  addResponseMessage
+  // ,addLinkSnippet,addUserMessage
 } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
 import logo from "./assets/images/upsy_emo/upsy1_emo1.svg";
 
 class App extends Component {
   componentDidMount() {
-    addResponseMessage("Hello! What would you like to tell Upsy?");
+    addResponseMessage("Hi! How are you doing today?");
   }
 
   handleNewUserMessage = newMessage => {
@@ -32,7 +31,7 @@ class App extends Component {
         <Widget
           handleNewUserMessage={this.handleNewUserMessage}
           profileAvatar={logo}
-          title="My new awesome title"
+          title="Chat with Upsy!"
           subtitle="And my cool subtitle"
         />
       </main>
