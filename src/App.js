@@ -1,21 +1,42 @@
-import React from 'react';
-import './assets/css/App.css';
-import HeaderMain from './components/HeaderMain';
-import TechUsed from './components/TechUsed';
-import WhatUpsyDo from './components/WhatUpsyDo';
+import React, { Component } from "react";
+import "./App.css";
+import Landing from "./components/Landing/Landing";
+import TechUsed from "./components/TechUsed/TechUsed";
+import WhatUpsyDo from "./components/WhatUpsyDo/WhatUpsyDo";
 
-function App() {
-  return (
+import {
+  Widget,
+  addResponseMessage
+  // ,addLinkSnippet,addUserMessage
+} from "react-chat-widget";
+import "react-chat-widget/lib/styles.css";
+import logo from "./assets/images/upsy_emo/upsy1_emo1.svg";
 
-    <main className="app">
+class App extends Component {
+  componentDidMount() {
+    addResponseMessage("Hi! How are you doing today?");
+  }
 
-      <HeaderMain />
-      <WhatUpsyDo />
-      <TechUsed />
+  handleNewUserMessage = newMessage => {
+    console.log(`New message incomig! ${newMessage}`);
+    // Now send the message throught the backend API
+  };
 
-    </main>
-
-  );
+  render() {
+    return (
+      <main className="App">
+        <Landing />
+        <WhatUpsyDo />
+        <TechUsed />
+        <Widget
+          handleNewUserMessage={this.handleNewUserMessage}
+          profileAvatar={logo}
+          title="Chat with Upsy!"
+          subtitle="And my cool subtitle"
+        />
+      </main>
+    );
+  }
 }
 
 export default App;
