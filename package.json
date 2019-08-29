@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.19.0",
     "ibm-watson": "^4.4.0",
     "react": "^16.9.0",
     "react-chat-widget": "^2.1.4-1",
