@@ -40,22 +40,3 @@ body {
     transform: rotate(360deg);
   }
 }
-
-/* chat styles */
-
-.rcw-header,
-.rcw-close-button,
-.rcw-client,
-.rcw-launcher {
-  background: #6bccf3 !important;
-  color: white !important;
-}
-
-.rcw-avatar {
-  height: 60px !important;
-  width: 60px !important;
-}
-
-.rcw-open-launcher {
-  /* content: url("./assets/images/upsy_emo/upsy1_emo1.svg") !important; */
-}
