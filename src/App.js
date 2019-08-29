@@ -10,7 +10,7 @@ import {
   // ,addLinkSnippet,addUserMessage
 } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
-import logo from "./assets/images/upsy_emo/upsy1_emo1.svg";
+import logo from "./assets/images/check/check1.svg";
 
 class App extends Component {
   componentDidMount() {
@@ -20,6 +20,8 @@ class App extends Component {
   handleNewUserMessage = newMessage => {
     console.log(`New message incomig! ${newMessage}`);
     // Now send the message throught the backend API
+    addResponseMessage("Hi! How are you doing today?");
+    addResponseMessage("Hi! How are you doing today?");
   };
 
   render() {
