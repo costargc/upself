@@ -2,6 +2,8 @@
 Upself presents a friendly chatbot AI called Upsy with a simple goal *Make your day better!*
 Upsy is programed to handle statistically significant psychological tests to help you understand and measure how you are felling and is also packed with some cool question-answers datasets to make it more fun the interaction.
 
+https://upself-web.herokuapp.com/
+
 <p align="center">
 <img src="./src/assets/images/logo_upself.svg" />
 </p>
