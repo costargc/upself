@@ -1,26 +1,37 @@
-import React from "react";
-import "./style.css";
+import React, { Component } from "react";
+import "./chat.css";
 
-function openChat(props) {
-  return (
-    <div class="wrapper-all">
-      <div id="chat"></div>
-      <div class="github">
-        <img
-          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-          alt="chat_img"
+import {
+  Widget,
+  addResponseMessage
+  // ,addLinkSnippet,addUserMessage
+} from "react-chat-widget";
+import "react-chat-widget/lib/styles.css";
+import logo from "../../assets/images/check/check1.svg";
+
+class Chat extends Component {
+  componentDidMount() {
+    addResponseMessage("Hi! How are you doing today?");
+  }
+
+  handleNewUserMessage = newMessage => {
+    console.log(`New message incomig! ${newMessage}`);
+    addResponseMessage("I'm still learning!");
+    // Now send the message throught the backend API
+  };
+
+  render() {
+    return (
+      <main className="Chat">
+        <Widget
+          handleNewUserMessage={this.handleNewUserMessage}
+          profileAvatar={logo}
+          title="Chat with Upsy!"
+          subtitle="And my cool subtitle"
         />
-        <div class="link">
-          <a
-            href="https://github.com/heysafronov/mangosteen-chat"
-            target="_blank"
-          >
-            GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-  );
+      </main>
+    );
+  }
 }
 
-export default openChat;
+export default Chat;
