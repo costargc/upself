@@ -1,7 +1,4 @@
-var colors = require("colors");
-var convert = require("xml-js");
 var Promise = require("bluebird");
-var request = Promise.promisifyAll(require("request"), { multiArgs: true });
 const NaturalLanguageUnderstandingV1 = require("ibm-watson/natural-language-understanding/v1.js");
 
 var AnalyzeMessage = function(userMessage) {
