@@ -38,10 +38,10 @@ function WhatUpsyDo() {
         <div
           className="col-8"
           style={{
-            alignContent: "center",
+            textAlign: "left",
             verticalAlign: "middle",
             fontSize: "25px",
-            float: "left"
+            // float: "left"
           }}
         >
           Upsy can give you an emergency complement!{" "}
@@ -70,10 +70,10 @@ function WhatUpsyDo() {
         <div
           className="col-8"
           style={{
-            alignContent: "center",
+            textAlign: "left",
             verticalAlign: "middle",
             fontSize: "25px",
-            float: "left"
+            // float: "left"
           }}
         >
           Upsy can help you throw away big stressfull thoughts!
@@ -101,10 +101,10 @@ function WhatUpsyDo() {
         <div
           className="col-8"
           style={{
-            alignContent: "center",
+            textAlign: "left",
             verticalAlign: "middle",
             fontSize: "25px",
-            float: "left"
+            // float: "left"
           }}
         >
           Upsy can measure your anxiety and depression level!
@@ -132,10 +132,10 @@ function WhatUpsyDo() {
         <div
           className="col-8"
           style={{
-            alignContent: "center",
+            textAlign: "left",
             verticalAlign: "middle",
             fontSize: "25px",
-            float: "left"
+            // float: "left"
           }}
         >
           Upsy can talk to you!{" "}

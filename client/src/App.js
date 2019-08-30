@@ -6,6 +6,7 @@ import WhatUpsyDo from "./components/WhatUpsyDo/WhatUpsyDo";
 import Chat from "./components/Chat/Chat";
 
 class App extends Component {
+
   render() {
     return (
       <main className="App">
