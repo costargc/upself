@@ -5,7 +5,7 @@ Upsy is programed to handle statistically significant psychological tests to hel
 https://upself-web.herokuapp.com/
 
 <p align="center">
-<img src="./src/assets/images/logo_upself.svg" />
+<img src="./client/src/assets/images/logo_upself.svg" />
 </p>
 
 # Technology Used
