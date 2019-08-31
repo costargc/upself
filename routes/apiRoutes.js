@@ -6,12 +6,12 @@ const router = require("express").Router();
 router.post("/analyzeMessage", function(req, res) {
   console.log(req.body.params);
 
-  AnalyzeMessage = new AnalyzeMessage(req.body.params.userMessage).emotion.then(
-    function(result) {
-      console.log(result);
-      res.json(result).catch(err => res.status(422).json(err));
-    }
-  );
+  new AnalyzeMessage(req.body.params.userMessage).emotion.then(function(
+    result
+  ) {
+    console.log("Emotion results: ", result);
+    res.json(result);
+  });
 });
 
 module.exports = router;
