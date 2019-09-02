@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import "./chat.css";
-
+import Chat_img from "../Chat_img/Chat_img";
 import API from "../../utils/API";
 
 import {
   Widget,
-  addResponseMessage
-  // ,addLinkSnippet,addUserMessage
+  addResponseMessage,
+  addLinkSnippet,
+  addUserMessage,
+  renderCustomComponent
+  // setQuickButtons
 } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
 import logo from "../../assets/images/check/check1.svg";
@@ -18,12 +21,31 @@ class Chat extends Component {
 
   componentDidMount() {
     addResponseMessage("Hi! How are you doing today?");
+
+    // this is a text for the link
+    addLinkSnippet(
+      {
+        title: 'My awesome link',
+        link: 'https://www.google.com',
+        target: '_blank'
+      }
+    );
+    // white msg as a user - to be used after a button is clicked
+    addUserMessage("this is a test as a user");
+
+    // renderCustomComponent(<Chat_img link="../../assets/images/upsy_friend.svg"/>);
+    renderCustomComponent(Chat_img,{link: require("../../assets/images/upsy_help.svg")},true);
+
   }
 
   handleNewUserMessage = newMessage => {
     console.log(`New message incoming! ${newMessage}`);
-    API.getMessageAnalysis(`${newMessage}`);
+    
+    // removing ibm api for now
+    // API.getMessageAnalysis(`${newMessage}`);
+
     addResponseMessage("I'm still learning!");
+
     // Now send the message throught the backend API
   };
 
