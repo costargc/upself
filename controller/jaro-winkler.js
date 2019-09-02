@@ -1,3 +1,5 @@
+// 
+
 jaro = function (str1, str2) {
     var lenStr1 = str1.length,
         lenStr2 = str2.length,
@@ -37,9 +39,18 @@ String.prototype.jaroscore = function (abbreviation) {
     return jaroWinkler(this.toLowerCase(), abbreviation.toLowerCase());
 };
 
+// test
 //   console.log('Q1. '+"who r u?".jaroscore('What is your name?'));
 //   console.log('Q2. '+"who r u?".jaroscore('How are you?'));
 //   console.log('Q3. '+"who r u?".jaroscore('who are you?'));
 //   console.log('Q4. '+"who arer u?".jaroscore('who are you?'));
 //   console.log('Q5. '+"who arer you".jaroscore('who are you?'));
-//   console.log('Q6. '+"who arer you".jaroscore('who are you?'));
+//   console.log('Q6. '+"who are you".jaroscore('who are you?'));
+
+// reverse test
+//   console.log('Q1rev. '+"What is your name?".jaroscore('who r u?'));
+//   console.log('Q2rev. '+"How are you?".jaroscore('who r u?'));
+//   console.log('Q3rev. '+"who are you?".jaroscore('who r u?'));
+//   console.log('Q4rev. '+"who are you?".jaroscore('who arer u?'));
+//   console.log('Q5rev. '+"who are you?".jaroscore('who arer you'));
+//   console.log('Q6rev. '+"who are you?".jaroscore('who are you'));
