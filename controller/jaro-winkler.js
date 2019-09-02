@@ -1,6 +1,7 @@
-// 
+// https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance
 
-jaro = function (str1, str2) {
+
+exports.jaro = function (str1, str2) {
     var lenStr1 = str1.length,
         lenStr2 = str2.length,
         matchWindow = Math.max(lenStr1, lenStr2) / 2 - 1,
@@ -24,9 +25,11 @@ jaro = function (str1, str2) {
     return (1 / 3 * (matches / lenStr1 + matches / lenStr2 + (matches - transpositions) / matches));
 };
 
-jaroWinkler = function (str1, str2, p) {
+// Case sensitive JaroWinkler
+// str1 is the test string
+exports.jaroWinkler_CS = function (str1, str2, p) {
     p = p || 0.1;
-    var dj = jaro(str1, str2), l = 0;
+    var dj = exports.jaro(str1, str2), l = 0;
 
     for (var i = 0; i < 4; i++) { /* find length of prefix match (max 4) */
         if (str1[i] == str2[i]) { l++; } else { break; }
@@ -35,12 +38,19 @@ jaroWinkler = function (str1, str2, p) {
     return dj + (l * p * (1 - dj));
 };
 
-String.prototype.jaroscore = function (abbreviation) {
-    return jaroWinkler(this.toLowerCase(), abbreviation.toLowerCase());
+// in this we force all to lowercase to test
+String.prototype.jaroWinkler = function (abbreviation) {
+    return exports.jaroWinkler_CS(this.toLowerCase(), abbreviation.toLowerCase());
 };
 
-// test
-//   console.log('Q1. '+"who r u?".jaroscore('What is your name?'));
+
+// test jaro/jarowinkler/jaroscore
+// console.log('jaro. ' + exports.jaro("who r u?", 'What is your name?'));
+// console.log('jarowinkler. ' + exports.jaroWinkler_CS("who r u?",'What is your name?'));
+// console.log('jaroscore. ' + "who r u?".jaroWinkler('What is your name?'));
+
+// test normal
+// console.log('Q1. ' + "who r u?".jaroscore('What is your name?'));
 //   console.log('Q2. '+"who r u?".jaroscore('How are you?'));
 //   console.log('Q3. '+"who r u?".jaroscore('who are you?'));
 //   console.log('Q4. '+"who arer u?".jaroscore('who are you?'));
