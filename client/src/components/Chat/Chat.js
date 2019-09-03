@@ -23,28 +23,30 @@ class Chat extends Component {
     addResponseMessage("Hi! How are you doing today?");
 
     // this is a text for the link
-    addLinkSnippet(
-      {
-        title: 'My awesome link',
-        link: 'https://www.google.com',
-        target: '_blank'
-      }
-    );
+    // addLinkSnippet(
+    //   {
+    //     title: 'My awesome link',
+    //     link: 'https://www.google.com',
+    //     target: '_blank'
+    //   }
+    // );
+    
     // white msg as a user - to be used after a button is clicked
-    addUserMessage("this is a test as a user");
+    // addUserMessage("this is a test as a user");
 
     // renderCustomComponent(<Chat_img link="../../assets/images/upsy_friend.svg"/>);
-    renderCustomComponent(Chat_img,{link: require("../../assets/images/upsy_help.svg")},true);
+    // renderCustomComponent(Chat_img,{link: require("../../assets/images/upsy_help.svg")},true);
 
   }
 
   handleNewUserMessage = newMessage => {
-    console.log(`New message incoming! ${newMessage}`);
+    // console.log(`New message incoming! ${newMessage}`);
     
     // removing ibm api for now
     // API.getMessageAnalysis(`${newMessage}`);
 
-    addResponseMessage("I'm still learning!");
+    // parrot like bot
+    addResponseMessage(`${newMessage}`);
 
     // Now send the message throught the backend API
   };
