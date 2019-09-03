@@ -1,26 +1,32 @@
 import React, { Component } from "react";
 import "./chat.css";
-import Chat_img from "../Chat_img/Chat_img";
-import API from "../../utils/API";
+// import Chat_img from "../Chat_img/Chat_img";
+// import API from "../../utils/API";
+
 
 import {
   Widget,
   addResponseMessage,
-  addLinkSnippet,
-  addUserMessage,
-  renderCustomComponent
+  // addLinkSnippet,
+  // addUserMessage,
+  // renderCustomComponent
   // setQuickButtons
 } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
 import logo from "../../assets/images/check/check1.svg";
+
 
 class Chat extends Component {
   state = {
     logo: logo
   };
 
+
   componentDidMount() {
     addResponseMessage("Hi! How are you doing today?");
+
+
+
 
     // this is a text for the link
     // addLinkSnippet(
@@ -30,7 +36,7 @@ class Chat extends Component {
     //     target: '_blank'
     //   }
     // );
-    
+
     // white msg as a user - to be used after a button is clicked
     // addUserMessage("this is a test as a user");
 
@@ -41,9 +47,10 @@ class Chat extends Component {
 
   handleNewUserMessage = newMessage => {
     // console.log(`New message incoming! ${newMessage}`);
-    
+
     // removing ibm api for now
     // API.getMessageAnalysis(`${newMessage}`);
+    // console.log(ChatbotDataset);
 
     // parrot like bot
     addResponseMessage(`${newMessage}`);

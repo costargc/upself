@@ -1,4 +1,5 @@
 let AnalyzeMessage = require("../controller/AnalyzeMessage.js");
+let JaroWinkler = require('../controller/jaro-winkler');
 
 const router = require("express").Router();
 
@@ -13,5 +14,6 @@ router.post("/analyzeMessage", function(req, res) {
     res.json(result);
   });
 });
+
 
 module.exports = router;
