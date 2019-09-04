@@ -1,8 +1,9 @@
 let AnalyzeMessage = require("../controller/AnalyzeMessage.js");
 let JaroWinkler = require('../controller/jaro-winkler.js');
-let ChatbotDataset = require('../controller/data/english/ai.json');
+// let ChatbotDataset = require('../controller/data/english/ai.json');
 
 var fs = require('fs');
+var ChatbotDataset = JSON.parse(fs.readFileSync('./controller/data/english/ai.json'));
 
 
 const router = require("express").Router();
