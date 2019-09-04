@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./chat.css";
 // import Chat_img from "../Chat_img/Chat_img";
-// import API from "../../utils/API";
+import API from "../../utils/API";
 
 
 import {
@@ -52,8 +52,15 @@ class Chat extends Component {
     // API.getMessageAnalysis(`${newMessage}`);
     // console.log(ChatbotDataset);
 
-    // parrot like bot
-    addResponseMessage(`${newMessage}`);
+    // echo bot
+
+
+    // smart lvl0 bot
+  
+    API.getMessageJaro(`${newMessage}`).then(function (response) {
+      addResponseMessage(`${response}`);
+      // console.log(response);
+    });
 
     // Now send the message throught the backend API
   };
