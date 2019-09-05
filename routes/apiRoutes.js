@@ -1,10 +1,9 @@
 let AnalyzeMessage = require("../controller/AnalyzeMessage.js");
 let JaroWinkler = require('../controller/jaro-winkler.js');
 // let ChatbotDataset = require('../controller/data/english/ai.json');
-
 var fs = require('fs');
-var ChatbotDataset = JSON.parse(fs.readFileSync('./controller/data/english/ai.json'));
-
+// var ChatbotDataset = JSON.parse(fs.readFileSync('./controller/data/english/trivia.json'));
+var ChatbotDataset = loadconversationfiles();
 
 const router = require("express").Router();
 
@@ -30,6 +29,7 @@ router.post("/jaroMessage", function (req, res) {
   var score = [];
   var indexscore = [];
   // console.log(ChatbotDataset.conversations.length);
+
 
   for (var i = 0; i < ChatbotDataset.conversations.length; i++) {
     // console.log(ChatbotDataset.conversations[i].user_input);
@@ -62,5 +62,34 @@ router.post("/jaroMessage", function (req, res) {
 });
 
 
+
+// add loadconversation to a diferent function.
+function loadconversationfiles() {
+  var fs = require('fs');
+  var ChatbotDataset = JSON.parse(fs.readFileSync('./controller/data/english/ai.json'));
+
+  // market elements are returning an error...
+  datavector = ["ai","botprofile", "computers", "conversations", "emotion", "food", "gossip", "greetings", "health", "history", "humor", "literature", "money", "movies", "politics", "psychology", "science", "sports", "trivia"];
+  // datavector = ["ai","botprofile","computers","conversations","emotion","food","gossip","greetings","health","history","humor","literature","money","movies","politics","psychology","science","sports","trivia"];
+
+  var mergefile = [];
+  // for (var j = 0; j < datavector.length; j++) {
+  for (var j = 0; j < datavector.length; j++) {
+    mergefile[j] = JSON.parse(fs.readFileSync('./controller/data/english/' + datavector[j] + '.json'));
+    for (var i = 0; i < mergefile[j].conversations.length; i++) {
+      ChatbotDataset.conversations.push(mergefile[j].conversations[i]);
+    }
+  }
+
+  // console.log(ChatbotDataset);
+
+  // fs.writeFile("./controller/data/english/checkme.json", JSON.stringify(ChatbotDataset), function (err) {
+  //   if (err) {
+  //     console.log(err);
+  //   }
+  // })
+
+  return ChatbotDataset;
+}
 
 module.exports = router;
