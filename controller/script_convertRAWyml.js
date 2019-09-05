@@ -1,24 +1,7 @@
 var fs = require('fs');
 
-datavector = ["ai",
-    "botprofile",
-    "computers",
-    "conversations",
-    "emotion",
-    "food",
-    "gossip",
-    "greetings",
-    "health",
-    "history",
-    "humor",
-    "literature",
-    "money",
-    "movies",
-    "politics",
-    "psychology",
-    "science",
-    "sports",
-    "trivia"];
+datavector = ["ai","botprofile","computers","conversations","emotion","food","gossip","greetings","health","history","humor","literature","money","movies","politics","psychology","science","sports","trivia"];
+// datavector = ["computers"];
 
 
 for (var j = 0; j < datavector.length; j++) {
@@ -32,13 +15,16 @@ for (var j = 0; j < datavector.length; j++) {
     var data_user_input = [];
     var data_response = [];
     var file = [];
+    var countinput = 0;
+    var countresp = 0;
 
     stringdata = rawdata.toString();
     while (stringdata.indexOf('\"') > -1) {
         stringdata = stringdata.replace('\"', "'");
     }
 
-    stringdata.split('\n').forEach(function (line) {
+    stringdata.split('\n').forEach(function (line, index) {
+
 
         if (line.indexOf("conversations:") > -1) {
             console.log(line);
@@ -52,7 +38,7 @@ for (var j = 0; j < datavector.length; j++) {
             read = false;
         }
 
-        if (categories == true && read == false && line.indexOf("categories:") == -1 && line.indexOf("conversations:") == -1) {
+        if (read == false && categories == true &&  line.indexOf("categories:") == -1 && line.indexOf("conversations:") == -1) {
             line = line.replace("- ", "");
             line = line.replace("\r", "");
             line = line.replace('\"', "");
@@ -64,14 +50,23 @@ for (var j = 0; j < datavector.length; j++) {
         if (read == true && categories == false && line.indexOf("categories:") == -1 && line.indexOf("conversations:") == -1 && line.indexOf("- - ") > -1) {
             line = line.replace("- - ", "");
             line = line.replace("\r", "");
-            data_user_input.push(line)
+            data_user_input.push(line);
+            oldinput = line;
+            countinput++;
         }
 
         if (read == true && categories == false && line.indexOf("categories:") == -1 && line.indexOf("conversations:") == -1 && line.indexOf("  - ") > -1) {
             line = line.replace("  - ", "");
             line = line.replace("\r", "");
-            data_response.push(line)
+            data_response.push(line);
+            countresp++;
         }
+
+        if (countresp > countinput) {
+            data_user_input.push(oldinput);
+            countinput++;
+        }
+
     })
 
     results = [];

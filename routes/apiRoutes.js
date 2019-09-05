@@ -69,9 +69,8 @@ function loadconversationfiles() {
   var ChatbotDataset = JSON.parse(fs.readFileSync('./controller/data/english/ai.json'));
 
   // market elements are returning an error...
-  datavector = [
-    // "ai","computers", "conversations", "emotion", "health", "literature", "psychology", "sports"
-    "botprofile", "food", "gossip", "greetings", "history", "humor", "money", "movies", "politics", "science", "trivia"];
+  datavector = ["ai","botprofile", "computers", "conversations", "emotion", "food", "gossip", "greetings", "health", "history", "humor", "literature", "money", "movies", "politics", "psychology", "science", "sports", "trivia"];
+  // datavector = ["ai","botprofile","computers","conversations","emotion","food","gossip","greetings","health","history","humor","literature","money","movies","politics","psychology","science","sports","trivia"];
 
   var mergefile = [];
   // for (var j = 0; j < datavector.length; j++) {
