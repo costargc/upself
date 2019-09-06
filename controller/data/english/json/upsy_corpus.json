@@ -496,6 +496,55 @@
             "categories": [
                 "upsy corpus"
             ]
+        },
+        {
+            "user_input": "I did",
+            "response": "awesome",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I did",
+            "response": "great",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Do you like sports?",
+            "response": "I love it!",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Do you like sports?",
+            "response": "yeap its important to do sports!",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Do you like sports?",
+            "response": "Sure - but I don't have a body... but I still like to watch! 😊",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Do you like sports?",
+            "response": "I like to watch! 😊",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Do you like sports?",
+            "response": "I do... what is your favorite?",
+            "categories": [
+                "upsy corpus"
+            ]
         }
     ]
 }
