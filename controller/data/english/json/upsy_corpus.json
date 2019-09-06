@@ -545,6 +545,41 @@
             "categories": [
                 "upsy corpus"
             ]
+        },
+        {
+            "user_input": "I'm doing great",
+            "response": "So glad to hear it!",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm doing great",
+            "response": "🤗",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm doing great",
+            "response": "I love to hear you say that",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm not so great",
+            "response": "too bad ... want to talk about it?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm not so great",
+            "response": "😟... want to talk about it?",
+            "categories": [
+                "upsy corpus"
+            ]
         }
     ]
 }
