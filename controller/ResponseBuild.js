@@ -68,7 +68,7 @@ function loadconversationfiles() {
 
     // market elements are returning an error...
     // datavector = [];
-    datavector = ["ai", "botprofile", "computers", "conversations", "emotion", "food", "gossip", "greetings", "health", "history", "humor", "literature", "money", "movies", "politics", "psychology", "science", "sports", "trivia"];
+    datavector = ["upsy_compliments","ai", "botprofile", "computers", "conversations", "emotion", "food", "gossip", "greetings", "health", "history", "humor", "literature", "money", "movies", "politics", "psychology", "science", "sports", "trivia"];
 
     var mergefile = [];
     // for (var j = 0; j < datavector.length; j++) {
