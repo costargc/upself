@@ -85,7 +85,7 @@ for (var j = 0; j < datavector.length; j++) {
         conversations: results
     }
 
-    fs.writeFile("./controller/data/english/" + select + ".json", JSON.stringify(json_results), function (err) {
+    fs.writeFile("./controller/data/english/json/" + select + ".json", JSON.stringify(json_results), function (err) {
         if (err) {
             console.log(err);
         }

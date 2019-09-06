@@ -34,8 +34,8 @@ exports.jaroWinkler_CS = function (str1, str2, p) {
     for (var i = 0; i < 4; i++) { /* find length of prefix match (max 4) */
         if (str1[i] == str2[i]) { l++; } else { break; }
     }
-
-    return dj + (l * p * (1 - dj));
+    return dj;
+    // return dj + (l * p * (1 - dj));
 };
 
 // in this we force all to lowercase to test

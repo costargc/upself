@@ -1,9 +1,7 @@
 let AnalyzeMessage = require("../controller/AnalyzeMessage.js");
-let JaroWinkler = require('../controller/jaro-winkler.js');
-// let ChatbotDataset = require('../controller/data/english/ai.json');
-var fs = require('fs');
+let ResponseBuild = require("../controller/ResponseBuild.js");
 // var ChatbotDataset = JSON.parse(fs.readFileSync('./controller/data/english/trivia.json'));
-var ChatbotDataset = loadconversationfiles();
+
 
 const router = require("express").Router();
 
@@ -21,75 +19,12 @@ router.post("/analyzeMessage", function (req, res) {
 
 router.post("/jaroMessage", function (req, res) {
 
-  // console.log(req.body.params.userMessage);
-  // ChatbotDataset = JSON.parse(ChatbotDataset);
-  // console.log(ChatbotDataset.conversations.length);
+  console.log("Inbound: " + req.body.params.userMessage);
 
-  var usermsg = req.body.params.userMessage;
-  var score = [];
-  var indexscore = [];
-  // console.log(ChatbotDataset.conversations.length);
+  result = ResponseBuild(req.body.params.userMessage);
+  console.log("Text results: ", result);
+  res.json(result);
 
-
-  for (var i = 0; i < ChatbotDataset.conversations.length; i++) {
-    // console.log(ChatbotDataset.conversations[i].user_input);
-    if (usermsg.jaroWinkler(ChatbotDataset.conversations[i].user_input) === NaN) {
-      score.push(0);
-    }
-    else {
-      score.push(usermsg.jaroWinkler(ChatbotDataset.conversations[i].user_input));
-    }
-    if (usermsg.jaroWinkler(ChatbotDataset.conversations[i].user_input) > 0.95) {
-      indexscore.push(i);
-    }
-  }
-
-  if (indexscore.length == 0) {
-    indexscore.push(score.indexOf(Math.max.apply(null, score)));
-  }
-
-  // console.log(score);
-
-  var randomItem = indexscore[Math.floor(Math.random() * indexscore.length)];
-  if (randomItem < 0) {
-    randomItem = 0;
-  }
-  // console.log(randomItem);
-  // console.log(ChatbotDataset.conversations[randomItem].response);
-
-  res.json(ChatbotDataset.conversations[randomItem].response);
-  // return ChatbotDataset.conversations[randomItem].response;
 });
-
-
-
-// add loadconversation to a diferent function.
-function loadconversationfiles() {
-  var fs = require('fs');
-  var ChatbotDataset = JSON.parse(fs.readFileSync('./controller/data/english/ai.json'));
-
-  // market elements are returning an error...
-  datavector = ["ai","botprofile", "computers", "conversations", "emotion", "food", "gossip", "greetings", "health", "history", "humor", "literature", "money", "movies", "politics", "psychology", "science", "sports", "trivia"];
-  // datavector = ["ai","botprofile","computers","conversations","emotion","food","gossip","greetings","health","history","humor","literature","money","movies","politics","psychology","science","sports","trivia"];
-
-  var mergefile = [];
-  // for (var j = 0; j < datavector.length; j++) {
-  for (var j = 0; j < datavector.length; j++) {
-    mergefile[j] = JSON.parse(fs.readFileSync('./controller/data/english/' + datavector[j] + '.json'));
-    for (var i = 0; i < mergefile[j].conversations.length; i++) {
-      ChatbotDataset.conversations.push(mergefile[j].conversations[i]);
-    }
-  }
-
-  // console.log(ChatbotDataset);
-
-  // fs.writeFile("./controller/data/english/checkme.json", JSON.stringify(ChatbotDataset), function (err) {
-  //   if (err) {
-  //     console.log(err);
-  //   }
-  // })
-
-  return ChatbotDataset;
-}
 
 module.exports = router;
