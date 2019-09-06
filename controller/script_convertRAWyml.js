@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-datavector = ["ai","botprofile","computers","conversations","emotion","food","gossip","greetings","health","history","humor","literature","money","movies","politics","psychology","science","sports","trivia"];
+datavector = ["upsy_compliments","ai","botprofile","computers","conversations","emotion","food","gossip","greetings","health","history","humor","literature","money","movies","politics","psychology","science","sports","trivia"];
 // datavector = ["computers"];
 
 
@@ -85,7 +85,7 @@ for (var j = 0; j < datavector.length; j++) {
         conversations: results
     }
 
-    fs.writeFile("./controller/data/english/" + select + ".json", JSON.stringify(json_results), function (err) {
+    fs.writeFile("./controller/data/english/json/" + select + ".json", JSON.stringify(json_results), function (err) {
         if (err) {
             console.log(err);
         }
