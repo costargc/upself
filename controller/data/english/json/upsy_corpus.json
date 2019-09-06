@@ -209,6 +209,28 @@
             "categories": [
                 "upsy corpus"
             ]
+        },
+        {
+            "user_input": "I love you",
+            "response": "😍",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I love you",
+            "response": "❤️",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I love you",
+            "response": "you are so nice - I love you too and I bet many people also do love you.",
+            "categories": [
+                "upsy corpus"
+            ]
         }
+        
     ]
 }
