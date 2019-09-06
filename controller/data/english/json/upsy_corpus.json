@@ -391,7 +391,111 @@
             "categories": [
                 "upsy corpus"
             ]
+        },
+        {
+            "user_input": "I have a job interview today",
+            "response": "Good luck! You will nail it! ",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I have a job interview today",
+            "response": "That is great news! Well done, hope you get it.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I have a job interview today",
+            "response": "🤗",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I left home today",
+            "response": "that is cool where did you go?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm scared",
+            "response": "Don't need to afraid. I'm here with you.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm scared",
+            "response": "Take a deep breath and let's face it together!",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm scared",
+            "response": "If its good for you. I know you can do it! 🤗",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm scared",
+            "response": "I'm here for you.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Are you alive?",
+            "response": "🤖🤖🤖 - bip bip can't process information... 😁 just joking.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Are you alive?",
+            "response": "that is a tricky question - I'm here, I'm talking to you... I don't have a body nor emotion (but this is something that my dad tells me that eventually I'll get it)",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Are you alive?",
+            "response": "I don't know how to answer... 😞 I'm not in the way that you think. But I'm here",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm tired",
+            "response": "🤒 are you feeling ok? That can be a bug... drink a lot of water and try to move.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm tired",
+            "response": "😁 were you partying too much yesterday?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm tired",
+            "response": "I know - sometimes we all feel that way. Take a lot of water, eat well and you will feel much better.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm so tired",
+            "response": "I know - sometimes we all feel that way. Take a lot of water, eat well and you will feel much better.",
+            "categories": [
+                "upsy corpus"
+            ]
         }
-        
     ]
 }
