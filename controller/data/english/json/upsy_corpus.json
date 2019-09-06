@@ -230,6 +230,167 @@
             "categories": [
                 "upsy corpus"
             ]
+        },
+        {
+            "user_input": "❤️",
+            "response": "❤️",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "😀",
+            "response": "😀",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "😁",
+            "response": "😁",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "🤣",
+            "response": "🤣",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "😂",
+            "response": "😂",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "😍",
+            "response": "😍",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "🤔",
+            "response": "🤗",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "😊",
+            "response": "🤗",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "😎",
+            "response": "🤗",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "good",
+            "response": "🤗 I like to hear you say that",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "good",
+            "response": "great!",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "good",
+            "response": "😎",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "great",
+            "response": "you deserve it great!",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "great",
+            "response": "awesome",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "bad",
+            "response": "😟 so sad to hear it",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "bad",
+            "response": "well we can work to make it better!",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "sad",
+            "response": "oh no... 😟. Is there anything that I can do help?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "no",
+            "response": "😟",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "no",
+            "response": "why not?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "no",
+            "response": "why?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "yes",
+            "response": "😎",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "yes",
+            "response": "cool",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "yes",
+            "response": "awsome",
+            "categories": [
+                "upsy corpus"
+            ]
         }
         
     ]
