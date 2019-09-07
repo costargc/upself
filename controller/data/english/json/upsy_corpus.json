@@ -580,6 +580,27 @@
             "categories": [
                 "upsy corpus"
             ]
+        },
+        {
+            "user_input": "I don't like water",
+            "response": "I don't also - but its important to you! you should drink some along the day.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I don't like water",
+            "response": " its important to you! you should drink some along the day.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I don't like water",
+            "response": "Try adding some juice to it. It will taste great 😊... but try to do more water than juice!",
+            "categories": [
+                "upsy corpus"
+            ]
         }
     ]
 }
