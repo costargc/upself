@@ -776,6 +776,34 @@
             "categories": [
                 "upsy corpus"
             ]
+        },
+        {
+            "user_input": "I feel tired",
+            "response": "🤒 are you feeling ok? That can be a bug... drink a lot of water and try to move.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I feel tired",
+            "response": "😁 were you partying too much yesterday?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I feel tired",
+            "response": "I know - sometimes we all feel that way. Take a lot of water, eat well and you will feel much better.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I feel tired",
+            "response": "I know - sometimes we all feel that way. Take a lot of water, eat well and you will feel much better.",
+            "categories": [
+                "upsy corpus"
+            ]
         }
     ]
 }
