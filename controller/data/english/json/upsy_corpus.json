@@ -755,6 +755,27 @@
             "categories": [
                 "upsy corpus"
             ]
+        },
+        {
+            "user_input": "How are you?",
+            "response": "great!",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "How are you?",
+            "response": "I'm doing great! 🤗",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "How are you?",
+            "response": "super! 🤗",
+            "categories": [
+                "upsy corpus"
+            ]
         }
     ]
 }
