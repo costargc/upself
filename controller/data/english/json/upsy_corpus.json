@@ -804,6 +804,34 @@
             "categories": [
                 "upsy corpus"
             ]
+        },
+        {
+            "user_input": "Thank you",
+            "response": "🤗 ❤️.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Thank you",
+            "response": "you are welcome! 🤗 ❤️.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Thank you",
+            "response": "you are welcome! 🤗.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Thank you",
+            "response": "🤗.",
+            "categories": [
+                "upsy corpus"
+            ]
         }
     ]
 }
