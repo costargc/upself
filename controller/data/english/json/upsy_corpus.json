@@ -902,6 +902,27 @@
             "categories": [
                 "upsy corpus"
             ]
+        },
+        {
+            "user_input": "I am sleepy",
+            "response": "Sleep is essential to your well-being. Take a nap!",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I want to get away",
+            "response": "Where do you wnat to go?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm bored",
+            "response": "Let's chat!",
+            "categories": [
+                "upsy corpus"
+            ]
         }
     ]
 }
