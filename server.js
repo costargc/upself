@@ -1,4 +1,5 @@
 const express = require("express");
+var cors = require("cors");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -11,6 +12,12 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
+app.use(cors());
+
+app.listen(80, function() {
+  console.log("CORS-enabled web server listening on port 80");
+});
 
 // Routes
 app.use("/api", apiRoutes);
