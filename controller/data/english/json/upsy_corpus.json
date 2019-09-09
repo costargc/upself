@@ -1121,7 +1121,7 @@
             ]
         },
         {
-            "user_input": "Tell me a joke",
+            "user_input": "Tell me a joke, please",
             "response": "The first time I got a universal remote control I thought to myself, 'This changes everything'.",
             "categories": [
                 "upsy corpus"
