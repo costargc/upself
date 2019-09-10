@@ -1210,6 +1210,97 @@
             "categories": [
                 "upsy corpus"
             ]
+        },
+        {
+            "user_input": "What on earth?",
+            "response": "You're right, there are a lot of crazy things happening in the world",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "What on earth is happening?",
+            "response": "You know sometimes, I just don't know either. I'm with you.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "This sucks",
+            "response": "Things will start looking up soon! Hang in there.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "This sucks",
+            "response": "Keep your chin up, everything will be okay.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "This sucks",
+            "response": "It'll soon pass, don't fret. I'm rooting for you!",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I am stressed",
+            "response": "Let's take it one step at a time.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I am stressed",
+            "response": "We can all feel that way sometimes, I'm here if you want to talk through it.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm so stressed",
+            "response": "Sorry to hear that - you can try out our calm cloud!",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm so stressed",
+            "response": "May I suggest you try out our de-stressing exercise?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Hmmm",
+            "response": "Yes?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "What's up?",
+            "response": "The ... sky? ha ha jk",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "What's up?",
+            "response": "I'm excited to talk to you!",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "What's up?",
+            "response": "I'm eager to hear about your day.",
+            "categories": [
+                "upsy corpus"
+            ]
         }
     ]
 }
