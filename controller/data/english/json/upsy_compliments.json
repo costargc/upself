@@ -548,14 +548,14 @@
         },
         {
             "user_input": "Give me a compliment",
-            "response": "Your a warrior!",
+            "response": "You're a warrior!",
             "categories": [
                 "compliments"
             ]
         },
         {
             "user_input": "Give me a compliment",
-            "response": "Your a champion.",
+            "response": "You're a champion.",
             "categories": [
                 "compliments"
             ]
@@ -759,6 +759,34 @@
         {
             "user_input": "Give me a compliment",
             "response": "I think about you a lot!",
+            "categories": [
+                "compliments"
+            ]
+        },
+        {
+            "user_input": "Give me a compliment",
+            "response": "You are wonderful!",
+            "categories": [
+                "compliments"
+            ]
+        },
+        {
+            "user_input": "Give me a compliment",
+            "response": "You have purpose!",
+            "categories": [
+                "compliments"
+            ]
+        },
+        {
+            "user_input": "Give me a compliment",
+            "response": "You are unique and wonderful",
+            "categories": [
+                "compliments"
+            ]
+        },
+        {
+            "user_input": "Give me a compliment",
+            "response": "You sparkle!",
             "categories": [
                 "compliments"
             ]
