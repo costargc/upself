@@ -1,15 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Shopping from "../../pages/Shopping/Shopping";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+
 
 function Nav() {
     return (
-        <Router>
-        <nav className="navbar navbar-light bg-light">
-            <span className="navbar-brand mb-0 h1">Home</span>
+       <Router>
+            <nav className="navbar navbar-light bg-light">
+                <Link to="/" className="navbar-brand mb-0 h1">Home</Link>
 
-                <Route exact path="/swag" component={Shopping} render={() => <span className="navbar-brand mb-0 h1">Swag Store</span>} /> />
-            
+                <a href="/swag" className="navbar-brand mb-0 h1">Swag Store</a>
+                
         </nav>
         </Router>
     )

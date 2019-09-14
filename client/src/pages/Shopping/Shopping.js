@@ -1,3 +1,5 @@
+// this page is not being used
+
 import React, { Component } from "react";
 
 function swagShopConfig() {
