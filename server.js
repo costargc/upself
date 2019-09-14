@@ -19,9 +19,9 @@ if (process.env.NODE_ENV === "production") {
 app.use("/api", apiRoutes);
 
 // route to direcet to the swag shop -- not currnetly working :(
-app.get("/swag", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/public/swag.html"));
-});
+// app.get("/swag", (req, res) => {
+//   res.sendFile(path.join(__dirname, "./client/public/swag.html"));
+// });
 
 // Send every other request to the React app
 // Define any API routes before this runs
