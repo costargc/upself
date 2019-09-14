@@ -10,16 +10,46 @@
     <meta name="description" content="Web site created using create-react-app" />
     
     <title>Swag</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+    <!-- css for Nav and Swag page -->
+    <link rel="stylesheet" type="text/css" href="../src/components/Nav/nav.css">
+    <link rel="stylesheet" type="text/css" href="../src/components/Nav/nav.css">
+
 
 </head>
 
+<style>
+    /* font-family: 'Roboto', sans-serif; */
+    #myShop {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .sprd-startpage-teaser {
+        display: none;
+    }
+
+    .sprd-btn-primary {
+        background-color: red;
+    }
+
+    .sprd-startpage-preview-tiles__text {
+        padding: 0px;
+    }
+
+</style>
+
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <nav class="navbar navbar-light bg-light">
+        <a href="/" class="navbar-brand mb-0 h1">Home</a>
+        <a target="_blank" href="/swag" class="navbar-brand mb-0 h1">Swag Store</a>
+    </nav>
     <div id="root">
         <div class="container">
         <div id="myShop">
