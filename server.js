@@ -18,11 +18,6 @@ if (process.env.NODE_ENV === "production") {
 // Routes
 app.use("/api", apiRoutes);
 
-// route to direcet to the swag shop -- not currnetly working :(
-// app.get("/swag", (req, res) => {
-//   res.sendFile(path.join(__dirname, "./client/public/swag.html"));
-// });
-
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get("*", (req, res) => {
@@ -31,5 +26,5 @@ app.get("*", (req, res) => {
 
 
 app.listen(PORT, () => {
-  console.log(`🌎 ==> API server now on port http://localhost:${PORT}  `);
+  console.log(`🌎 ==> API server now on port http://localhost:${PORT}`);
 });

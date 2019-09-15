@@ -17,38 +17,76 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-    <!-- css for Nav and Swag page -->
-    <link rel="stylesheet" type="text/css" href="../src/components/Nav/nav.css">
-    <link rel="stylesheet" type="text/css" href="../src/components/Nav/nav.css">
-
+    <!-- css for Nav.. this link is incorrect :(-->
+    <!-- <link rel="stylesheet" type="text/css" href="client/src/components/Nav/nav.css"> -->
 
 </head>
 
 <style>
     /* font-family: 'Roboto', sans-serif; */
-    #myShop {
+    /* pink color #F46DCE */
+    /* blue color #6DCEF4 */
+    /* gray background color #F2F2F2 */
+
+    /* #myShop {
         font-family: 'Roboto', sans-serif;
+    } */
+
+    #buttonSpreadshirt {
+        display: none;
     }
     
     .sprd-startpage-teaser {
         display: none;
     }
 
-    .sprd-btn-primary {
-        background-color: red;
+    .sprd-bg-m2 {
+        background-color: #F46DCE90 !important;
     }
+
+    .sprd-btn-primary {
+        background-color: #6DCEF4 !important;
+        border: #6DCEF4 !important;
+    } 
+
+    /* /* .sprd-btn-secondary {
+        background-color: #6DCEF440 !important;
+    } */
 
     .sprd-startpage-preview-tiles__text {
         padding: 0px;
     }
 
+    /* NAV BAR ------------------------*/
+    
+    .navbar-nav {
+        flex-direction: row !important 
+    }
+
+    .nav-link {
+        margin-left: 1rem;
+        font-size: .75rem
+    }
+
+    .bg-light {
+        background-color: #6DCEF440!important;
+    }
+
 </style>
 
 <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <nav class="navbar navbar-light bg-light">
-        <a href="/" class="navbar-brand mb-0 h1">Home</a>
-        <a target="_blank" href="/swag" class="navbar-brand mb-0 h1">Swag Store</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Upself</a>
+        
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/swag">Swag Store</a>
+                </li>
+            
+            </ul>
     </nav>
     <div id="root">
         <div class="container">
@@ -70,6 +108,11 @@
         <script type="text/javascript" src="../../client/src/components/Nav/Nav.js"></script>
         <script type="text/javascript" src="https://shop.spreadshirt.com/shopfiles/shopclient/shopclient.nocache.js">
         </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
