@@ -3,6 +3,7 @@
 .rcw-header, .rcw-close-button, .rcw-client, .rcw-launcher {
   background: #6bccf3 !important;
   color: white !important;
+  z-index: 100 !important;
 }
 
 .rcw-avatar {
