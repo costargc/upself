@@ -15,4 +15,8 @@ router.get("/swag", function (req, res) {
   res.sendFile(path.join(__dirname, "./client/public/swag.html"));
 });
 
+router.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "./client/public/index.html"));
+});
+
 module.exports = router;

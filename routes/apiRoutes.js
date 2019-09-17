@@ -6,6 +6,9 @@ let ResponseBuild = require("../controller/ResponseBuild.js");
 const router = require("express").Router();
 
 // Post route for receiving user's message and returning IBM Watson's Analysis
+
+
+
 router.post("/analyzeMessage", function (req, res) {
   console.log(req.body.params);
 
@@ -16,6 +19,10 @@ router.post("/analyzeMessage", function (req, res) {
     res.json(result);
   });
 });
+
+
+
+
 
 router.post("/jaroMessage", function (req, res) {
 
