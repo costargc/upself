@@ -12,6 +12,7 @@
 
         /* margin-right: 70px; */
     }
+
     
 /* START START START home page - navbar */
 
@@ -27,6 +28,7 @@
 
 .navbar-custom {
     background-color: rgb(19, 174, 240, 0.1);
+    z-index: 3;
 }
 
 .nav-item {

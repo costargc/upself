@@ -1,12 +1,26 @@
 /* chat styles */
+body{
+  z-index: 9999 !important;
+}
 
 .rcw-header, .rcw-close-button, .rcw-client, .rcw-launcher {
   background: #6bccf3 !important;
   color: white !important;
-  z-index: 100 !important;
+  z-index: 9999 !important;
+}
+
+.rcw-widget-container,  .rcw-opened{
+  z-index: 9999 !important;
 }
 
 .rcw-avatar {
   height: 50px !important;
   width: 50px !important;
+  z-index: 9999 !important;
+}
+
+@media screen and (max-width: 800px){
+.rcw-header {
+  z-index: 9999 !important;
+}
 }
