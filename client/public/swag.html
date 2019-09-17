@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#000000" />
 
     <meta name="description" content="Web site created using create-react-app" />
-    
+
     <title>Swag</title>
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
@@ -33,34 +33,113 @@
     } */
 
     #buttonSpreadshirt {
-        display: none;
-    }
-    
-    .sprd-startpage-teaser {
-        display: none;
+        /* display: none; */
     }
 
-    .sprd-bg-m2 {
-        background-color: #F46DCE90 !important;
+    .sprd-startpage-teaser {
+        /* display: none; */
     }
+
+    .sprd-header__image {
+        display: none !important;
+    }
+
+    .SprdMain .sprd-promo-expander {
+        margin-top: 50px !important;
+        padding: 20px !important;
+        width: 100% !important;
+        /* position: absolute!important; */
+        overflow: auto !important;
+    }
+
+    .SprdMain .sprd-info-footer {
+        display: none !important;
+    }
+
+    #buttonSpreadshirt {
+        display: none !important;
+    }
+
+    @media screen and (max-width: 767px) {
+        .SprdMain .sprd-breadcrumb {
+            overflow-x: hidden !important;
+        }
+    }
+
+    body {
+        padding-bottom: 100px !important;
+    }
+
+    .sprd-button.sprd-primary {
+        background-color: #f46dce !important;
+        border-radius: 50px !important;
+        padding: 5px 36px !important;
+        font-weight: 600 !important;
+        border-color: #f46dce !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1.8px !important;
+    }
+
+    .sprd-button.sprd-primary:hover {
+        background-color: white !important;
+        color: #f46dce !important;
+        border-radius: 50px !important;
+        padding: 5px 36px !important;
+        font-weight: 600 !important;
+        border-color: #f46dce !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1.8px !important;
+    }
+
+    .SprdMain .sprd-detail-columns {
+        display: none !important;
+    }
+
+    .SprdMain .sprd-promo-box {
+        /* position: relative !important; */
+        border-color: #f46dce !important;
+        color: #f46dce !important;
+    }
+
+    .sprd-department-filter__departments sprd-bg-m1 sprd-c-s3 {
+        position: relative !important;
+    }
+
+    .SprdMain .sprd-listpage__title {
+        margin-top: 100px !important;
+    }
+
+    .SprdMain .sprd-listpage .sprd-button {
+        display: none !important;
+    }
+
+    .SprdMain .sprd-basket-footer__button:hover{
+        opacity: 0.5 !important;
+    }
+
+
+    .SprdMain .sprd-promo-expander {
+        background-color: #f46dce !important;
+    }
+
 
     .sprd-btn-primary {
         background-color: #6DCEF4 !important;
         border: #6DCEF4 !important;
-    } 
+    }
 
     /* /* .sprd-btn-secondary {
         background-color: #6DCEF440 !important;
     } */
 
     .sprd-startpage-preview-tiles__text {
-        padding: 0px;
+        /* padding: 0px; */
     }
 
     /* NAV BAR ------------------------*/
-    
+
     .navbar-nav {
-        flex-direction: row !important 
+        flex-direction: row !important
     }
 
     .nav-link {
@@ -69,52 +148,49 @@
     }
 
     .bg-light {
-        background-color: #6DCEF440!important;
+        background-color: #6DCEF440 !important;
     }
-
 </style>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/">Upself</a>
-        
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/swag">Swag Store</a>
-                </li>
-            
-            </ul>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/swag">Swag Store</a>
+            </li>
+
+        </ul>
     </nav>
     <div id="root">
         <div class="container">
-        <div id="myShop">
+            <div id="myShop">
                 <a href="https://shop.spreadshirt.com/upself-merch">upself-merch is loading...</a>
             </div>
         </div>
-        
+
     </div>
-        <script>
-            var spread_shop_config = {
-                shopName: 'upself-merch',
-                locale: 'us_US',
-                prefix: 'https://shop.spreadshirt.com',
-                baseId: 'myShop'
-            };
-        </script>
-        
-        <script type="text/javascript" src="../../client/src/components/Nav/Nav.js"></script>
-        <script type="text/javascript" src="https://shop.spreadshirt.com/shopfiles/shopclient/shopclient.nocache.js">
-        </script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-            crossorigin="anonymous"></script>
+    <script>
+        var spread_shop_config = {
+            shopName: 'upself-merch',
+            locale: 'us_US',
+            prefix: 'https://shop.spreadshirt.com',
+            baseId: 'myShop'
+        };
+    </script>
+
+    <script type="text/javascript" src="../../client/src/components/Nav/Nav.js"></script>
+    <script type="text/javascript" src="https://shop.spreadshirt.com/shopfiles/shopclient/shopclient.nocache.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-

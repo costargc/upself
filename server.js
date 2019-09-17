@@ -3,6 +3,7 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const apiRoutes = require("./routes/apiRoutes");
+const htmlRoutes = require("./routes/htmlRoutes");
 require('dotenv').config()
 
 // Define middleware here
@@ -17,6 +18,7 @@ if (process.env.NODE_ENV === "production") {
 
 // Routes
 app.use("/api", apiRoutes);
+app.use("/", htmlRoutes);
 
 // Send every other request to the React app
 // Define any API routes before this runs
