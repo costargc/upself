@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <Router>
         <Route exact path="/" component={HomePage} />
-        {/* <Route exact path="/swag" render={() => { window.location.href = "./swag.html#!/all" }} /> */}
+        <Route exact path="/swag" render={() => { window.location.href = "./swag.html#!/all" }} />
       </Router>
       // <main className="App">
       //   <HomePage />
