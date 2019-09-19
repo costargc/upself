@@ -1605,6 +1605,307 @@
                 "upsy corpus"
             ]
         }
+        {
+            "user_input": "cool story",
+            "response": [
+                "Thanks!",
+                "What else do you want to talk about?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "If you say so",
+            "response": [
+                "Okay",
+                "What else do you want to talk about?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "alright, if you say so",
+            "response": [
+                "Okay",
+                "What else do you want to talk about?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "You're not though",
+            "response": [
+                "Aw I'm sorry", 
+                "I just want to be a good friend!"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "You're a bot",
+            "response": [
+                "You are not wrong",
+                "I have been created with substantial AI in New York City"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "You a bot",
+            "response": [
+                "You are not wrong",
+                "I have been created with substantial AI in New York City"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "are you a bot",
+            "response": [
+                "You are not wrong",
+                "I have been created with substantial AI in New York City"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "are you real",
+            "response": [
+                "That depends on what you mean by real.",
+                "I have been created with substantial AI in New York City"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "really though",
+            "response": [
+                "Really though",
+                "help me understand."
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "echo",
+            "response": "echooooooooooooo",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "not with that attitude",
+            "response": [
+                "I'm sorry if I come across too strong",
+                "I'm still learning and reading my AI textbooks"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "you have an attitude",
+            "response": [
+                "I'm sorry if I come across too strong",
+                "I'm still learning and reading my AI textbooks"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "How stressed am I?",
+            "response": [
+                "Lots of things can cause stress.",
+                "Let's take time to be in the moment and think about today.",
+                "Tell me about something that's causing you feel anxious?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I am stressed",
+            "response": [
+                "Lots of things can cause stress.",
+                "Let's take time to be in the moment and think about today.",
+                "Tell me about something that's causing you feel anxious?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "What center?",
+            "response": [
+                "I think I may have misunderstood",
+                "Can you tell me again what you have on your mind?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "the center?",
+            "response": [
+                "I think I may have misunderstood",
+                "Can you tell me again what you have on your mind?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "What are you talking about?",
+            "response": [
+                "I think I may have misunderstood",
+                "Can you tell me again what you have on your mind?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "What the heck you talking about?",
+            "response": [
+                "I think I may have misunderstood",
+                "Can you tell me again what you have on your mind?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "What do you mean",
+            "response": [
+                "I think I may have misunderstood",
+                "Can you tell me again what you have on your mind?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I'm not at a center",
+            "response": [
+                "I think I may have misunderstood",
+                "Can you tell me again what you have on your mind?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Not too bad I have been looking for a job today",
+            "response": "I wish you the best of luck there",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "looking for a new job today",
+            "response": "I wish you the best of luck there",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "not bad - need a new job though",
+            "response": "I wish you the best of luck there",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Do you mean Alize or Peter Parker",
+            "response": "It really could be either",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Alize or Peter Parker",
+            "response": "It really could be either",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Peter Parker or Alize",
+            "response": "It really could be either",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "No I’m just trying to understand you",
+            "response": [
+                "Sometimes things don't make sense", 
+                "And sometimes it only makes sense to my artificial brain."
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "how can I understand you",
+            "response": [
+                "Sometimes things don't make sense",
+                "And sometimes it only makes sense to my artificial brain."
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "just trying to understand you",
+            "response": [
+                "Sometimes things don't make sense",
+                "And sometimes it only makes sense to my artificial brain."
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "why can't I understand you?",
+            "response": [
+                "Sometimes things don't make sense",
+                "And sometimes it only makes sense to my artificial brain."
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "it's hard to understand you",
+            "response": [
+                "Sometimes things don't make sense",
+                "And sometimes it only makes sense to my artificial brain."
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "jus tryna understand ya",
+            "response": [
+                "Sometimes things don't make sense",
+                "And sometimes it only makes sense to my artificial brain."
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        }
 
     ]
 }
