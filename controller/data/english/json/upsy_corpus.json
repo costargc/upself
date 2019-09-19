@@ -1548,6 +1548,62 @@
             "categories": [
                 "upsy corpus"
             ]
+        },
+        {
+            "user_input": "why are you saying my sadness is awesome",
+            "response": "I'm sorry I didn't mean to say that",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "what",
+            "response": "I'm not following, can you share what you were asking again?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "wht",
+            "response": "I'm not following, can you share what you were asking again?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "huh?",
+            "response": "I'm not following, can you share what you were asking again?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "huh",
+            "response": "I'm not following, can you share what you were asking again?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "umm what?",
+            "response": "I'm not following, can you share what you were asking again?",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "terribly",
+            "response": "Oh no, I'm so sorry",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "terrible",
+            "response": "Oh no, I'm so sorry",
+            "categories": [
+                "upsy corpus"
+            ]
         }
 
     ]
