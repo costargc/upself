@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./chat.css";
 // import Chat_img from "../Chat_img/Chat_img";
 import API from "../../utils/API";
+import Typing from "../Typing/Typing"
 
 
 import {
@@ -18,7 +19,8 @@ import logo from "../../assets/images/check/check1.svg";
 
 class Chat extends Component {
   state = {
-    logo: logo
+    logo: logo,
+    isTyping: false
   };
 
 
@@ -87,6 +89,7 @@ class Chat extends Component {
   render() {
     return (
       <main className="Chat">
+        <Typing {this.state.isTyping} />
         <Widget
           handleNewUserMessage={this.handleNewUserMessage}
           profileAvatar={this.state.logo}
