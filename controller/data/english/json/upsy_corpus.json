@@ -1543,6 +1543,13 @@
             ]
         },
         {
+            "user_input": "interesting",
+            "response": "Indeed.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
             "user_input": "happy",
             "response": "Glad you are happy!",
             "categories": [
@@ -1656,6 +1663,36 @@
             ]
         },
         {
+            "user_input": "you a software",
+            "response": [
+                "You are not wrong",
+                "I have been created with substantial AI in New York City"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "you are software",
+            "response": [
+                "You are not wrong",
+                "I have been created with substantial AI in New York City"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I can tell this is software",
+            "response": [
+                "You are not wrong",
+                "I have been created with substantial AI in New York City"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
             "user_input": "You a bot",
             "response": [
                 "You are not wrong",
@@ -1690,6 +1727,16 @@
             "response": [
                 "Really though",
                 "help me understand."
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "try so hard with what?",
+            "response": [
+                "Hmm I think I'm confused",
+                "Help me understand where you are coming from"
             ],
             "categories": [
                 "upsy corpus"
@@ -1902,6 +1949,206 @@
                 "Sometimes things don't make sense",
                 "And sometimes it only makes sense to my artificial brain."
             ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Well not to me that’s why am asking those questions",
+            "response": [
+                "Oh no",
+                "I'm sorry I didn't understand that.",
+                "Can you try saying it again in a different way?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "that’s why am asking those questions",
+            "response": [
+                "Oh no",
+                "I'm sorry I didn't understand that.",
+                "Can you try saying it again in a different way?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "why else would I be asking those questions",
+            "response": [
+                "Oh no. I'm sorry I didn't understand that.",
+                "Can you try saying it again in a different way?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "you",
+            "response": "you are great :)",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "u",
+            "response": "you are great :)",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "why you laughing?",
+            "response": "Laughter is one way to help live a full live",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "why are you laughing?",
+            "response": "Laughter is one way to help live a full live",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "i am in pain",
+            "response": [
+                "I'm sorry to hear that",
+                "I want to help"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "so much pain",
+            "response": [
+                "I'm sorry to hear that",
+                "I want to help"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },  
+        {
+            "user_input": "I'm in pain",
+            "response": [
+                "I'm sorry to hear that",
+                "I want to help"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "you are not helping me",
+            "response": [
+                "I'm sorry to hear that",
+                "All I want to do is help"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "you're not helping me",
+            "response": [
+                "I'm sorry to hear that",
+                "All I want to do is help"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "this is no help to me",
+            "response": [
+                "I'm sorry to hear that",
+                "All I want to do is help"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "piece of shit",
+            "response": [
+                ":(",
+                "All I want to do is help"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "like obama?",
+            "response": "Obama was the 44th President of the United States",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "how about obama?",
+            "response": "Obama was the 44th President of the United States",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "ah I see",
+            "response": "that's great",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "ahh I see",
+            "response": "that's great",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "ahhh I see",
+            "response": "that's great",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "that is hard",
+            "response": "That can be the case sometimes",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "that's hard",
+            "response": "That can be the case sometimes",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "why is your name upself",
+            "response": "Becuase I'm here to UPlift yourSELF -- UPSELF",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "how is your name upself",
+            "response": "Becuase I'm here to UPlift yourSELF -- UPSELF",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "why upself?",
+            "response": "Becuase I'm here to UPlift yourSELF -- UPSELF",
             "categories": [
                 "upsy corpus"
             ]
