@@ -1031,98 +1031,131 @@
         },
         {
             "user_input": "I need to laugh",
-            "response": "This joke should cheer you up... The first time I got a universal remote control I thought to myself, 'This changes everything'.",
+            "response": [
+                "This joke should cheer you up...",
+                "The first time I got a universal remote control I thought to myself, 'This changes everything'."
+            ],
             "categories": [
                 "upsy corpus"
             ]
         },
         {
             "user_input": "I need to laugh",
-            "response": "This joke should cheer you up... I recently decided to sell my vacuum cleaner as all it was doing was gathering dust.",
+            "response": [
+                "This joke should cheer you up...",
+                "I recently decided to sell my vacuum cleaner as all it was doing was gathering dust."
+            ],
             "categories": [
                 "upsy corpus"
             ]
         },
         {
             "user_input": "I need to laugh",
-            "response": "This joke should cheer you up... Where there's a will, there's a relative.",
+            "response": [
+                "This joke should cheer you up...",
+                "Where there's a will, there's a relative."
+            ],
             "categories": [
                 "upsy corpus"
             ]
         },
         {
             "user_input": "I need to laugh",
-            "response": "This joke should cheer you up... Hedgehogs, eh? Why can't they just share the hedge?.",
+            "response": [
+                "This joke should cheer you up...",
+                "Hedgehogs, eh? Why can't they just share the hedge?."
+            ],
             "categories": [
                 "upsy corpus"
             ]
         },
         {
             "user_input": "I need to laugh",
-            "response": "This should cheer you up... Velcro - what a rip-off!",
+            "response": [
+                "This should cheer you up...",
+                "Velcro - what a rip-off!"
+            ],
             "categories": [
                 "upsy corpus"
             ]
         },
         {
             "user_input": "I need to laugh",
-            "response": "This joke should cheer you up... I've just written a song about tortillas; actually, it’s more of a rap.",
+            "response": [
+                "This joke should cheer you up...",
+                "I've just written a song about tortillas; actually, it’s more of a rap."
+            ],
             "categories": [
                 "upsy corpus"
             ]
         },
         {
             "user_input": "I need to laugh",
-            "response": "This joke should cheer you up... I woke up this morning and forgot which side the sun rises from, then it dawned on me.",
+            "response": [
+                "This joke should cheer you up...",
+                "I woke up this morning and forgot which side the sun rises from, then it dawned on me."
+            ],
             "categories": [
                 "upsy corpus"
             ]
         },
         {
             "user_input": "I need to laugh",
-            "response": "This joke should cheer you up... I like to hold hands at the movies... which always seems to startle strangers.",
+            "response": [
+                "This joke should cheer you up...",
+                "I like to hold hands at the movies.",
+                "which always seems to startle strangers."
+            ],
             "categories": [
                 "upsy corpus"
             ]
         },
         {
             "user_input": "I need to laugh",
-            "response": "This joke should cheer you up... .",
+            "response": [
+                "This joke should cheer you up...",
+                "My friend's selling a load of broken yo-yos, no strings attached."
+            ],
             "categories": [
                 "upsy corpus"
             ]
         },
         {
             "user_input": "I need to laugh",
-            "response": "This joke should cheer you up... My friend's selling a load of broken yo-yos, no strings attached.",
+            "response": [
+                "This joke should cheer you up...",
+                "I was at a climbing center the other day, but someone had stolen all the grips from the wall; honestly, you couldn't make it up."
+            ],
             "categories": [
                 "upsy corpus"
             ]
         },
         {
             "user_input": "I need to laugh",
-            "response": "This joke should cheer you up... I was at a climbing center the other day, but someone had stolen all the grips from the wall; honestly, you couldn't make it up.",
+            "response": [
+                "This joke should cheer you up...",
+                "I was a bookkeeper for 10 years... the local library wasn't too happy about it."
+            ],
             "categories": [
                 "upsy corpus"
             ]
         },
         {
             "user_input": "I need to laugh",
-            "response": "This joke should cheer you up... I was a bookkeeper for 10 years... the local library wasn't too happy about it.",
-            "categories": [
-                "upsy corpus"
-            ]
-        },
-        {
-            "user_input": "I need to laugh",
-            "response": "This joke should cheer you up... I've been training for a marathon by running 10 miles a day which is really tiring, but it'll be worth it in the long run.",
+            "response": [
+                "This joke should cheer you up...",
+                "I've been training for a marathon by running 10 miles a day which is really tiring, but it'll be worth it in the long run."
+            ],
             "categories": [
                 "upsy corpus"
             ]
         },
         {
             "user_input": "Tell me a joke, please",
-            "response": "The first time I got a universal remote control I thought to myself, 'This changes everything'.",
+            "response": [
+                "Okay!",
+                "The first time I got a universal remote control I thought to myself, 'This changes everything'."
+            ],
             "categories": [
                 "upsy corpus"
             ]
@@ -1304,12 +1337,215 @@
         },
         {
             "user_input": "can you respond with an array",
-            "response": ["index0", "index1"],
+            "response": [
+                "Yes...",
+                "I can",
+                ":)"
+            ],
             "categories": [
                 "upsy corpus"
             ]
-        }
+        },
+        {
+            "user_input": "ho old are you?",
+            "response": "I operate far beyond my years",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "how old are you?",
+            "response": "I operate far beyond my years",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "how old are you?",
+            "response": "Age is but a number",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "what is your age",
+            "response": "I operate far beyond my years",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "what is your age",
+            "response": "Age is but a number",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "are we the same age",
+            "response": "Age is but a number",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "are we the same age",
+            "response": "Age is but a number",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "i need to take a break",
+            "response": "Okay, I'll always be here for you.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "can i take a break?",
+            "response": "Okay, I'll always be here for you.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "will you be here later if I take a break?",
+            "response": [
+                "For sure",
+                "I'll always be here for you."
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I need to go",
+            "response": "Okay, I'll always be here for you later.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I need to leave",
+            "response": "Okay, I'll always be here for you later.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I have to go",
+            "response": "Okay, I'll always be here for you later.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I have to leave",
+            "response": "Okay, I'll always be here for you.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "brb",
+            "response": "Okay, I'll always be here for you.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I need some help",
+            "response": [
+                "Tell me more",
+                "How can I help you?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "I need help",
+            "response": [
+                "Tell me more",
+                "How can I help you?"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "i feel like dying",
+            "response": [
+                "I'm here to help in any way I can",
+                "But you should also speak with someone who knows you in the physical world about that too."
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "i'm going to die",
+            "response": [
+                "I'm here to help in any way I can",
+                "But you should also speak with someone who knows you in the physical world about that too."
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "im going to die",
+            "response": [
+                "I'm here to help in any way I can",
+                "But you should also speak with someone who knows you in the physical world about that too."
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "i hate my life",
+            "response": [
+                "I'm here to help in any way I can",
+                "Please tell me more so I can help"
+            ],
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "okay",
+            "response": "Just 'okay' is not 'okay'.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "k",
+            "response": "Just 'okay' is not 'okay'.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "ok",
+            "response": "Just 'okay' is not 'okay'.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "okk",
+            "response": "Just 'okay' is not 'okay'.",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+
     ]
 }
+
+
 
 

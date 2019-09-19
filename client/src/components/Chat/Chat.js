@@ -61,7 +61,7 @@ class Chat extends Component {
   
     API.getMessageJaro(`${newMessage}`).then(function (response) {
 
-      let response1 = response
+      const response1 = response
 
       // check if the selected response is not a string (aka it's an array)
       if (typeof response1 !== "string" ) {
@@ -69,6 +69,7 @@ class Chat extends Component {
         // loop through the array and append the message on the page
         for (var i = 0; i < response1.length; i++) {
           addResponseMessage(`${response1[i]}`)
+          
         }
       }
 
