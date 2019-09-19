@@ -54,11 +54,29 @@ class Chat extends Component {
 
     // echo bot
 
+    
+
 
     // smart lvl0 bot
   
     API.getMessageJaro(`${newMessage}`).then(function (response) {
-      addResponseMessage(`${response}`);
+
+      let response1 = response
+
+      // check if the selected response is not a string (aka it's an array)
+      if (typeof response1 !== "string" ) {
+        
+        // loop through the array and append the message on the page
+        for (var i = 0; i < response1.length; i++) {
+          addResponseMessage(`${response1[i]}`)
+        }
+      }
+
+      else {
+        addResponseMessage(`${response}`);
+      }
+
+     
       // console.log(response);
     });
 

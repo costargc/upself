@@ -1301,6 +1301,13 @@
             "categories": [
                 "upsy corpus"
             ]
+        },
+        {
+            "user_input": "can you respond with an array",
+            "response": ["index0", "index1"],
+            "categories": [
+                "upsy corpus"
+            ]
         }
     ]
 }
