@@ -28,34 +28,29 @@
     /* blue color #6DCEF4 */
     /* gray background color #F2F2F2 */
 
-    /* #myShop {
-        font-family: 'Roboto', sans-serif;
-    } */
 
-    #buttonSpreadshirt {
-        /* display: none; */
-    }
-
-    .sprd-startpage-teaser {
-        /* display: none; */
-    }
-
+/* Title or image from spreadshop at the top of the page */
     .sprd-header__image {
+        display: none !important;
+    }
+
+    .sprd-header__title {
         display: none !important;
     }
 
     .SprdMain .sprd-promo-expander {
         margin-top: 50px !important;
-        padding: 20px !important;
+        padding: 10px !important;
         width: 100% !important;
-        /* position: absolute!important; */
         overflow: auto !important;
     }
 
+/* footer */
     .SprdMain .sprd-info-footer {
         display: none !important;
     }
 
+/* link that says to open up your own spreadshop */
     #buttonSpreadshirt {
         display: none !important;
     }
@@ -99,7 +94,6 @@
     }
 
     .SprdMain .sprd-promo-box {
-        /* position: relative !important; */
         border-color: #f46dce !important;
         color: #f46dce !important;
     }
@@ -112,7 +106,7 @@
         margin-top: 100px !important;
     }
 
-    .SprdMain .sprd-listpage .sprd-button {
+    .SprdMain .sprd-listpage .sprd-button { /* What is this pointing to? */
         display: none !important;
     }
 
@@ -120,6 +114,7 @@
         opacity: 0.5 !important;
     }
 
+/* Shop and About section */
     .sprd-department-filter {
         display: none !important;
     }
@@ -128,6 +123,7 @@
         opacity: 0.5 !important;
     }
 
+/* do we need this? it's not on hte page */
     .sprd-basket__dropdown .sprd-basket-button {
         /* position: relative !important;    */
         align-content: center !important;
@@ -149,13 +145,11 @@
     } */
 
     .sprd-startpage-preview-tiles__text {
-        /* padding: 0px; */
+        padding: 0px;
     }
 
     .navbar-nav {
         text-align: right;
-
-        /* margin-right: 70px; */
     }
 
     /* START START START home page - navbar */
@@ -163,6 +157,16 @@
     #menu {
         color: #f46dce !important;
         font-weight: bold;
+        color: white;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    
+    .sprd-department-filter {
+        display: none !important;
+    }
+    .sprd-department-filter__openmenu {
+        display: none !important;
     }
 
     .navbar-nav {
@@ -176,15 +180,15 @@
 
     .nav-item {
         /* justify-content: right; */
-        margin-left: 50px;
+        margin-left: 20px;
     }
 
-    .navbar-custom.scrolled {
+    .navbar-custom.scrolled { /* EB - what is this pointing to? */
         background-color: rgb(0, 0, 0, 0.5);
     }
 
     .nav-link {
-        margin-right: 10px;
+        margin-right: 5px;
         transition: color .4s ease-out;
     }
 
@@ -224,11 +228,7 @@
     }
 
 
-    #menu {
-        color: white;
-        font-size: 15px;
-        margin-left: 10px;
-    }
+    
 </style>
 
 <body>
