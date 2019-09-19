@@ -1542,6 +1542,13 @@
                 "upsy corpus"
             ]
         },
+        {
+            "user_input": "happy",
+            "response": "Glad you are happy!",
+            "categories": [
+                "upsy corpus"
+            ]
+        }
 
     ]
 }
