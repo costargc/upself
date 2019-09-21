@@ -79,7 +79,6 @@ class Chat extends Component {
   render() {
     return (
       <main className="Chat">
-        {/* <Typing /> */}
         <Widget
           handleNewUserMessage={this.handleNewUserMessage}
           profileAvatar={this.state.logo}
