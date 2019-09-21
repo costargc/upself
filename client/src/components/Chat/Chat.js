@@ -103,7 +103,6 @@ class Chat extends Component {
   render() {
     return (
       <main className="Chat">
-        
         <Widget
           handleNewUserMessage={this.handleNewUserMessage}
           profileAvatar={this.state.logo}

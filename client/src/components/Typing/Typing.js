@@ -20,12 +20,6 @@ class Typing extends Component {
     state = {
         dots: true,
     }
-
-    // constructor() { }
-    // dismiss() {
-    //     this.props.unmountMe();
-    // }
-
     
     myVar = setTimeout(() => {
         this.setState({ dots: false })
@@ -51,9 +45,6 @@ class Typing extends Component {
         else {
             return null;
         }
-        
-
-        
     }
 }
 
