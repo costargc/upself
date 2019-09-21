@@ -27,9 +27,6 @@ class Chat extends Component {
   componentDidMount() {
     addResponseMessage("Hi! How are you doing today?");
 
-
-
-
     // this is a text for the link
     // addLinkSnippet(
     //   {
@@ -49,17 +46,13 @@ class Chat extends Component {
 
 
 
-
-
-
   handleNewUserMessage = newMessage => {
-
-    console.log(`State: ${this.state.isTyping}`)
+    // console.log(`first State: ${this.state.isTyping}`)
+    // this.setState({isTyping: true})
+    console.log(`second State: ${this.state.isTyping}`)
     
     renderCustomComponent(Typing, {isTyping: this.state.isTyping})
-    // renderCustomComponent(Typing)
 
-      
     API.getMessageJaro(`${newMessage}`).then(function (response) {
       
       const response1 = response
@@ -76,22 +69,11 @@ class Chat extends Component {
         addResponseMessage(`${response}`);
       }
 
-     
-      console.log(response);
+      // console.log(response);
     });
 
     // Now send the message throught the backend API
   };
-
-
-  handleTyping = () => {
-    if (this.state.isTyping) {
-      this.setState({ isTyping: false })
-    }
-    else {
-      this.setState({ isTyping: true })
-    }
-  }
 
 
   render() {

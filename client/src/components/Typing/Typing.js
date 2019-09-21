@@ -22,7 +22,7 @@ class Typing extends Component {
 
     
     render(props) {
-        // if (props) {
+        if (this.props.isTyping) {
             console.log(`Typing: ${this.props.isTyping}`)
             return (
                 <div>
@@ -31,9 +31,9 @@ class Typing extends Component {
                     <p>...</p>
                 </div>
             )
-        // }
+        }
 
-        // return <div />
+        return <div />
 
     }
 }
