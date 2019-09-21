@@ -60,7 +60,6 @@ class Chat extends Component {
     // delaying the reply messgae to be 1 second (in the hops of having the Typing component display for that amount of time)
     setTimeout(() => {
 
-      this.setState({ isTyping: false })
       addResponseMessage(`${response}`)
 
     }, 1000);
@@ -83,7 +82,6 @@ class Chat extends Component {
         
         // loop through the array and append the message on the page
         for (var i = 0; i < response1.length; i++) {
-          this.setState({ isTyping: false })
           this.displayMessgae(`${response1[i]}`)
           // addResponseMessage(`${response1[i]}`)
         }
@@ -91,7 +89,6 @@ class Chat extends Component {
 
       else {
         console.log("waiting....")
-        this.setState({ isTyping: false })
         this.displayMessgae(`${response}`)
       }
 
