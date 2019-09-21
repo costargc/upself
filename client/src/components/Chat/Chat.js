@@ -23,18 +23,18 @@ class Chat extends Component {
   constructor() {
     super()
     this.state = { renderChild: true };
-    this.handleChildUnmount = this.handleChildUnmount.bind(this);
+    // this.handleChildUnmount = this.handleChildUnmount.bind(this);
   }
 
   state = {
     logo: logo,
-    renderChild: true,
+    // renderChild: true,
   };
 
   // possible use for the unmount? (not sure how to get this working)
-  handleChildUnmount() {
-    this.setState({ renderChild: false });
-  }
+  // handleChildUnmount() {
+  //   this.setState({ renderChild: false });
+  // }
 
   componentDidMount() {
     addResponseMessage("Hi! How are you doing today?");
@@ -71,7 +71,7 @@ class Chat extends Component {
     // this.setState({isTyping: true})
     
     // this will pass the component Typing in, but we need that component to destroy itself... not sure how to do that
-    renderCustomComponent(Typing)
+    renderCustomComponent(Typing, {}, true)
 
     API.getMessageJaro(`${newMessage}`).then((response) => {
       console.log(`${response}`)
