@@ -10,7 +10,7 @@ import {
   addResponseMessage,
   // addLinkSnippet,
   // addUserMessage,
-  // renderCustomComponent
+  renderCustomComponent
   // setQuickButtons
 } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
@@ -20,7 +20,7 @@ import logo from "../../assets/images/check/check1.svg";
 class Chat extends Component {
   state = {
     logo: logo,
-    isTyping: false
+    isTyping: true
   };
 
 
@@ -47,31 +47,28 @@ class Chat extends Component {
 
   }
 
+
+
+
+
+
   handleNewUserMessage = newMessage => {
-    // console.log(`New message incoming! ${newMessage}`);
 
-    // removing ibm api for now
-    // API.getMessageAnalysis(`${newMessage}`);
-    // console.log(ChatbotDataset);
-
-    // echo bot
-
+    console.log(`State: ${this.state.isTyping}`)
     
+    renderCustomComponent(Typing, {isTyping: this.state.isTyping})
+    // renderCustomComponent(Typing)
 
-
-    // smart lvl0 bot
-  
+      
     API.getMessageJaro(`${newMessage}`).then(function (response) {
-
+      
       const response1 = response
-
       // check if the selected response is not a string (aka it's an array)
       if (typeof response1 !== "string" ) {
         
         // loop through the array and append the message on the page
         for (var i = 0; i < response1.length; i++) {
           addResponseMessage(`${response1[i]}`)
-          
         }
       }
 
@@ -80,16 +77,27 @@ class Chat extends Component {
       }
 
      
-      // console.log(response);
+      console.log(response);
     });
 
     // Now send the message throught the backend API
   };
 
+
+  handleTyping = () => {
+    if (this.state.isTyping) {
+      this.setState({ isTyping: false })
+    }
+    else {
+      this.setState({ isTyping: true })
+    }
+  }
+
+
   render() {
     return (
       <main className="Chat">
-        <Typing {this.state.isTyping} />
+        {/* <Typing /> */}
         <Widget
           handleNewUserMessage={this.handleNewUserMessage}
           profileAvatar={this.state.logo}
