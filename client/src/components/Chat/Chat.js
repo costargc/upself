@@ -71,7 +71,7 @@ class Chat extends Component {
     // this.setState({isTyping: true})
     
     // this will pass the component Typing in, but we need that component to destroy itself... not sure how to do that
-    // renderCustomComponent(Typing)
+    renderCustomComponent(Typing)
 
     API.getMessageJaro(`${newMessage}`).then((response) => {
       console.log(`${response}`)
@@ -90,6 +90,7 @@ class Chat extends Component {
       else {
         console.log("waiting....")
         this.displayMessgae(`${response}`)
+        // addResponseMessage(`${response}`)
       }
 
     });
