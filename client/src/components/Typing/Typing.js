@@ -1,40 +1,35 @@
+// what we need for this Typing component to work is a way for it to remove itself after a certain amount of time has passed.
+// Anyone have ideas on how to do that? (I've tried a few things already, but if anyone us familiar this the following let me know):
+    // unmountComponentAtNode()
+    // componentWillUnmount()
+
 import React, { Component } from "react";
-import API from "../../utils/API";
-import {
-    // Widget,
-    // addResponseMessage,
-    // addLinkSnippet,
-    // addUserMessage,
-    renderCustomComponent
-    // setQuickButtons
-} from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
 
 const dots = {
-    display: "none",
+    width: "40px",
 }
+
+// const hide = {
+//     display: "none"
+// }
 
 
 class Typing extends Component {
-    constructor(props) {
-        super(props);
+
+    // constructor() { }
+    dismiss() {
+        this.props.unmountMe();
     }
 
-    
     render(props) {
-        if (this.props.isTyping) {
-            console.log(`Typing: ${this.props.isTyping}`)
-            return (
-                <div>
-                    {/* <img src="client\src\components\Typing\typingImage\Ripple-1.4s-200px.gif" /> */}
-                    {/* <img src="https://media1.tenor.com/images/4543da9ae455b92fccebf272dd6ba752/tenor.gif?itemid=5803075" /> */}
-                    <p>...</p>
-                </div>
-            )
-        }
+        return (
+            <div>
+                <img style={dots} src={require("./typingImage/Ripple-1.4s-200px.gif")} />
+            </div>
+        );
 
-        return <div />
-
+        
     }
 }
 

@@ -18,11 +18,23 @@ import logo from "../../assets/images/check/check1.svg";
 
 
 class Chat extends Component {
+  
+
+  constructor() {
+    super()
+    this.state = { renderChild: true };
+    this.handleChildUnmount = this.handleChildUnmount.bind(this);
+  }
+
   state = {
     logo: logo,
-    isTyping: true
+    renderChild: true,
   };
 
+  // possible use for the unmount? (not sure how to get this working)
+  handleChildUnmount() {
+    this.setState({ renderChild: false });
+  }
 
   componentDidMount() {
     addResponseMessage("Hi! How are you doing today?");
@@ -43,42 +55,57 @@ class Chat extends Component {
     // renderCustomComponent(Chat_img,{link: require("../../assets/images/upsy_help.svg")},true);
 
   }
+ 
+  displayMessgae = response => {
+    // delaying the reply messgae to be 1 second (in the hops of having the Typing component display for that amount of time)
+    setTimeout(() => {
 
+      this.setState({ isTyping: false })
+      addResponseMessage(`${response}`)
+
+    }, 1000);
+  }
 
 
   handleNewUserMessage = newMessage => {
-    // console.log(`first State: ${this.state.isTyping}`)
+  
     // this.setState({isTyping: true})
-    console.log(`second State: ${this.state.isTyping}`)
     
-    renderCustomComponent(Typing, {isTyping: this.state.isTyping})
+    // this will pass the component Typing in, but we need that component to destroy itself... not sure how to do that
+    renderCustomComponent(Typing)
 
-    API.getMessageJaro(`${newMessage}`).then(function (response) {
-      
-      const response1 = response
+    API.getMessageJaro(`${newMessage}`).then((response) => {
+      console.log(`${response}`)
+
       // check if the selected response is not a string (aka it's an array)
+      const response1 = response
       if (typeof response1 !== "string" ) {
         
         // loop through the array and append the message on the page
         for (var i = 0; i < response1.length; i++) {
-          addResponseMessage(`${response1[i]}`)
+          this.setState({ isTyping: false })
+          this.displayMessgae(`${response1[i]}`)
+          // addResponseMessage(`${response1[i]}`)
         }
       }
 
       else {
-        addResponseMessage(`${response}`);
+        console.log("waiting....")
+        this.setState({ isTyping: false })
+        this.displayMessgae(`${response}`)
       }
 
-      // console.log(response);
     });
-
+    
     // Now send the message throught the backend API
   };
+
 
 
   render() {
     return (
       <main className="Chat">
+        
         <Widget
           handleNewUserMessage={this.handleNewUserMessage}
           profileAvatar={this.state.logo}
