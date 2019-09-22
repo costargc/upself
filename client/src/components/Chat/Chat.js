@@ -84,7 +84,7 @@ class Chat extends Component {
 
             });
 
-            // shows the typing dots
+            // shows the typing dots when upsy is typing
             addResponseMessage(`${response1[i]}`)
             console.log("for loop: " + i);
 
