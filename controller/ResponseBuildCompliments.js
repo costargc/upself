@@ -101,20 +101,20 @@ module.exports = ResponseBuildCompliments;
 // add loadconversation to a diferent function.
 function loadconversationfiles() {
     var fs = require('fs');
-    var ChatbotDataset_data = JSON.parse(fs.readFileSync('./controller/data/english/json/upsy_corpus.json'));
+    var ChatbotDataset_data = JSON.parse(fs.readFileSync('./controller/data/english/json/upsy_compliments.json'));
 
     // market elements are returning an error...
     // datavector = [];
-    datavector = ["upsy_compliments"];
+    // datavector = ["upsy_compliments"];
 
-    var mergefile = [];
+    // var mergefile = [];
+
     // for (var j = 0; j < datavector.length; j++) {
-    for (var j = 0; j < datavector.length; j++) {
-        mergefile[j] = JSON.parse(fs.readFileSync('./controller/data/english/json/' + datavector[j] + '.json'));
-        for (var i = 0; i < mergefile[j].conversations.length; i++) {
-            ChatbotDataset_data.conversations.push(mergefile[j].conversations[i]);
-        }
-    }
+    //     mergefile[j] = JSON.parse(fs.readFileSync('./controller/data/english/json/' + datavector[j] + '.json'));
+    //     for (var i = 0; i < mergefile[j].conversations.length; i++) {
+    //         ChatbotDataset_data.conversations.push(mergefile[j].conversations[i]);
+    //     }
+    // }
 
     // console.log(ChatbotDataset);
     return ChatbotDataset_data;
