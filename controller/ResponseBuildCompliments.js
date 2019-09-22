@@ -1,8 +1,6 @@
 // Copied over the previous ResponseBuild file and adjusted to only support the Compliments 
 // for the ComplimentsChat component in the app
 
-
-
 var jarodistance = require('jaro-winkler');
 var mongoose = require("mongoose");
 var fs = require('fs');
@@ -25,8 +23,7 @@ var ResponseBuildCompliments = function (userMessage) {
 
     // get all scores + select select +0.95 responses
     for (var i = 0; i < ChatbotDataset.conversations.length; i++) {
-        // console.log(ChatbotDataset.conversations[i].user_input);
-        // console.log(usermsg.jaroWinkler(ChatbotDataset.conversations[i].user_input));
+        
         jarodata = jarodistance(usermsg, ChatbotDataset.conversations[i].user_input, { caseSensitive: false });
         score.push(jarodata);
 
@@ -51,49 +48,35 @@ var ResponseBuildCompliments = function (userMessage) {
             }
         }
 
-        sendtodatabase = true;
+        // sendtodatabase = true;      // EB -- commenting this out on the ComplimentsChat page (limiting the responses that Upsy makes)
         databaseresults.message = userMessage;
         databaseresults.score = max_score;
     }
 
-    // console.log(score);
 
     // randomize response
     var randomItem = indexscore[Math.floor(Math.random() * indexscore.length)];
     if (randomItem < 0 || randomItem == undefined) {
-        // if (randomItem < 0 || randomItem==undefined) {
         randomItem = 0;
     }
-    // // console.log(randomItem);
-    // // console.log(ChatbotDataset.conversations[randomItem].response);
-
-    // // console.log(ChatbotDataset.conversations[randomItem]);
-    // res.json(ChatbotDataset.conversations[randomItem].response);
-    // Debug
-    
-    console.log("Jaro Score: " + jarodistance(usermsg, ChatbotDataset.conversations[randomItem].user_input, { caseSensitive: false }));
-    console.log("Inner Console: " + ChatbotDataset.conversations[randomItem].user_input);
 
     databaseresults.response = ChatbotDataset.conversations[randomItem].response;
-    // db.CorpusTraining.count({ message: usermsg }).then(function (countervalue) {
-    //     databaseresults.counter = countervalue;
-    // });
-
-    if (sendtodatabase == true) {
-        db.CorpusTraining.create(databaseresults)
-            .then(function (dbCorpusTraining) {
-                // View the added result in the console
-                console.log("dbCorpusTraining: " + dbCorpusTraining);
-            })
-            .catch(function (err) {
-                // If an error occurred, log it
-                console.log("ERROR dbCorpusTraining: " + err);
-            });
-    }
+    
+    // if (sendtodatabase == true) {    // EB -- The sendtodatabase value is staying as false here
+    //     db.CorpusTraining.create(databaseresults)
+    //         .then(function (dbCorpusTraining) {
+    //             // View the added result in the console
+    //             console.log("dbCorpusTraining: " + dbCorpusTraining);
+    //         })
+    //         .catch(function (err) {
+    //             // If an error occurred, log it
+    //             console.log("ERROR dbCorpusTraining: " + err);
+    //         });
+    // }
 
 
     return ChatbotDataset.conversations[randomItem].response;
-    //    return userMessage;
+
 };
 
 module.exports = ResponseBuildCompliments;
@@ -101,21 +84,18 @@ module.exports = ResponseBuildCompliments;
 // add loadconversation to a diferent function.
 function loadconversationfiles() {
     var fs = require('fs');
-    var ChatbotDataset_data = JSON.parse(fs.readFileSync('./controller/data/english/json/upsy_corpus.json'));
+    var ChatbotDataset_data = JSON.parse(fs.readFileSync('./controller/data/english/json/upsy_compliments.json'));
 
-    // market elements are returning an error...
-    // datavector = [];
-    datavector = ["upsy_compliments"];
+    // datavector = ["upsy_compliments"]; //  EB -- this datavector is being referenced in the ChatbotDataset_data, so it's not needed here
 
-    var mergefile = [];
+    // var mergefile = [];
+
     // for (var j = 0; j < datavector.length; j++) {
-    for (var j = 0; j < datavector.length; j++) {
-        mergefile[j] = JSON.parse(fs.readFileSync('./controller/data/english/json/' + datavector[j] + '.json'));
-        for (var i = 0; i < mergefile[j].conversations.length; i++) {
-            ChatbotDataset_data.conversations.push(mergefile[j].conversations[i]);
-        }
-    }
+    //     mergefile[j] = JSON.parse(fs.readFileSync('./controller/data/english/json/' + datavector[j] + '.json'));
+    //     for (var i = 0; i < mergefile[j].conversations.length; i++) {
+    //         ChatbotDataset_data.conversations.push(mergefile[j].conversations[i]);
+    //     }
+    // }
 
-    // console.log(ChatbotDataset);
     return ChatbotDataset_data;
 }
