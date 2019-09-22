@@ -1,8 +1,3 @@
-// what we need for this Typing component to work is a way for it to remove itself after a certain amount of time has passed.
-// Anyone have ideas on how to do that? (I've tried a few things already, but if anyone us familiar this the following let me know):
-    // unmountComponentAtNode()
-    // componentWillUnmount()
-
 import React, { Component } from "react";
 import "react-chat-widget/lib/styles.css";
 
