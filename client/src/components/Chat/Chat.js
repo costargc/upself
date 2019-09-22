@@ -4,7 +4,6 @@ import "./chat.css";
 import API from "../../utils/API";
 import Typing from "../Typing/Typing"
 
-
 import {
   Widget,
   addResponseMessage,
@@ -16,9 +15,8 @@ import {
 import "react-chat-widget/lib/styles.css";
 import logo from "../../assets/images/check/check1.svg";
 
-
 class Chat extends Component {
-  
+
 
   constructor() {
     super()
@@ -51,9 +49,8 @@ class Chat extends Component {
     // white msg as a user - to be used after a button is clicked
     // addUserMessage("this is a test as a user");
 
-
   }
- 
+
   // Used for single responses in the chat
   displayMessgae = response => {
 
@@ -67,7 +64,6 @@ class Chat extends Component {
     }, 1000)
   }
 
-
   handleNewUserMessage = newMessage => {
 
     API.getMessageJaro(`${newMessage}`).then((response) => {
@@ -75,7 +71,7 @@ class Chat extends Component {
 
       // check if the selected response is not a string (aka it's an array)
       const response1 = response
-      if (typeof response1 !== "string" ) {
+      if (typeof response1 !== "string") {
 
         // this function will display the dots then the response, then more dots in sync
         (async function loop() {
@@ -101,10 +97,9 @@ class Chat extends Component {
       }
 
     });
-    
+
     // Now send the message throught the backend API
   };
-
 
 
   render() {
@@ -122,3 +117,4 @@ class Chat extends Component {
 }
 
 export default Chat;
+
