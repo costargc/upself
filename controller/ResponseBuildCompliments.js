@@ -1,8 +1,6 @@
 // Copied over the previous ResponseBuild file and adjusted to only support the Compliments 
 // for the ComplimentsChat component in the app
 
-
-
 var jarodistance = require('jaro-winkler');
 var mongoose = require("mongoose");
 var fs = require('fs');
@@ -13,48 +11,48 @@ mongoose.connect("mongodb+srv://dbaccess:dbaccess_password@upself-database-ruumc
 
 
 var ResponseBuildCompliments = function (userMessage) {
-    var databaseresults = {};
+    // var databaseresults = {};
     var ChatbotDataset = loadconversationfiles();
     var usermsg = userMessage;
     var score = [];
     var indexscore = [];
-    var sendtodatabase = false;
+    // var sendtodatabase = false;
 
     // thse are all responses that upsy has:
     console.log("ChatbotDataset size: " + ChatbotDataset.conversations.length);
 
     // get all scores + select select +0.95 responses
-    for (var i = 0; i < ChatbotDataset.conversations.length; i++) {
-        // console.log(ChatbotDataset.conversations[i].user_input);
-        // console.log(usermsg.jaroWinkler(ChatbotDataset.conversations[i].user_input));
-        jarodata = jarodistance(usermsg, ChatbotDataset.conversations[i].user_input, { caseSensitive: false });
-        score.push(jarodata);
+    // for (var i = 0; i < ChatbotDataset.conversations.length; i++) {
+    //     // console.log(ChatbotDataset.conversations[i].user_input);
+    //     // console.log(usermsg.jaroWinkler(ChatbotDataset.conversations[i].user_input));
+    //     jarodata = jarodistance(usermsg, ChatbotDataset.conversations[i].user_input, { caseSensitive: false });
+    //     score.push(jarodata);
 
-        if (isNaN(score[i])) {
-            score[i] = 0;
-        }
+    //     if (isNaN(score[i])) {
+    //         score[i] = 0;
+    //     }
 
-        if (score[i] > 0.95) {
-            indexscore.push(i);
-        }
+    //     if (score[i] > 0.95) {
+    //         indexscore.push(i);
+    //     }
 
-    }
+    // }
 
     // select best responses if none has a 0.95 score (nax_score - 0.1)
-    if (indexscore.length == 0) {
+    // if (indexscore.length == 0) {
 
-        var max_score = Math.max.apply(null, score);
-        for (i = 0; i < ChatbotDataset.conversations.length; i++) {
-            jarodata = jarodistance(usermsg, ChatbotDataset.conversations[i].user_input, { caseSensitive: false });
-            if (jarodata > (max_score - 0.05) && isNaN(score[i]) == false) {
-                indexscore.push(i);
-            }
-        }
+    //     var max_score = Math.max.apply(null, score);
+    //     for (i = 0; i < ChatbotDataset.conversations.length; i++) {
+    //         jarodata = jarodistance(usermsg, ChatbotDataset.conversations[i].user_input, { caseSensitive: false });
+    //         if (jarodata > (max_score - 0.05) && isNaN(score[i]) == false) {
+    //             indexscore.push(i);
+    //         }
+    //     }
 
-        sendtodatabase = true;
-        databaseresults.message = userMessage;
-        databaseresults.score = max_score;
-    }
+        // sendtodatabase = true;
+        // databaseresults.message = userMessage;
+        // databaseresults.score = max_score;
+    // }
 
     // console.log(score);
 
@@ -74,22 +72,22 @@ var ResponseBuildCompliments = function (userMessage) {
     console.log("Jaro Score: " + jarodistance(usermsg, ChatbotDataset.conversations[randomItem].user_input, { caseSensitive: false }));
     console.log("Inner Console: " + ChatbotDataset.conversations[randomItem].user_input);
 
-    databaseresults.response = ChatbotDataset.conversations[randomItem].response;
+    // databaseresults.response = ChatbotDataset.conversations[randomItem].response;
     // db.CorpusTraining.count({ message: usermsg }).then(function (countervalue) {
     //     databaseresults.counter = countervalue;
     // });
 
-    if (sendtodatabase == true) {
-        db.CorpusTraining.create(databaseresults)
-            .then(function (dbCorpusTraining) {
-                // View the added result in the console
-                console.log("dbCorpusTraining: " + dbCorpusTraining);
-            })
-            .catch(function (err) {
-                // If an error occurred, log it
-                console.log("ERROR dbCorpusTraining: " + err);
-            });
-    }
+    // if (sendtodatabase == true) {
+    //     db.CorpusTraining.create(databaseresults)
+    //         .then(function (dbCorpusTraining) {
+    //             // View the added result in the console
+    //             console.log("dbCorpusTraining: " + dbCorpusTraining);
+    //         })
+    //         .catch(function (err) {
+    //             // If an error occurred, log it
+    //             console.log("ERROR dbCorpusTraining: " + err);
+    //         });
+    // }
 
 
     return ChatbotDataset.conversations[randomItem].response;
