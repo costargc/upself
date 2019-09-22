@@ -13,23 +13,38 @@ const dots = {
 // const hide = {
 //     display: "none"
 // }
-
+let myVar
 
 class Typing extends Component {
 
-    // constructor() { }
-    dismiss() {
-        this.props.unmountMe();
+    state = {
+        dots: true,
     }
+    
+    myVar = setTimeout(() => {
+        this.setState({ dots: false })
+    }, 990);
+
+
+    clear = () => {
+        if (!this.state.dot) {
+            clearTimeout(myVar);
+        }
+    }
+    
+
 
     render(props) {
-        return (
+        if (this.state.dots) {
+            return (
             <div>
-                <img style={dots} src={require("./typingImage/Ripple-1.4s-200px.gif")} />
+                <img style={dots} alt="typing dots" src={require("./typingImage/Ripple-1.4s-200px.gif")} />
             </div>
-        );
-
-        
+            );
+        }
+        else {
+            return null;
+        }
     }
 }
 
