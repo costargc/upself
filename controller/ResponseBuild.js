@@ -3,7 +3,8 @@ var mongoose = require("mongoose");
 var fs = require('fs');
 
 var db = require("../models");
-mongoose.connect("mongodb+srv://dbaccess:dbaccess_password@upself-database-ruumc.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true });
+var database_name = "upself_PROD";
+mongoose.connect("mongodb+srv://dbaccess:dbaccess_password@upself-database-ruumc.mongodb.net/"+database_name+"?retryWrites=true&w=majority", { useNewUrlParser: true });
 
 
 var ResponseBuild = function (userMessage) {
