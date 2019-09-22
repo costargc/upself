@@ -36,7 +36,7 @@ router.post("/jaroCompliment", function (req, res) {
 
   console.log("Inbound: " + req.body.params.userMessage);
 
-  result = ResponseBuildCompliment(req.body.params.userMessage);
+  result = ResponseBuildCompliments(req.body.params.userMessage);
   console.log("Text results: ", result);
   res.json(result);
 
