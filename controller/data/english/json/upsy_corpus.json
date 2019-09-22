@@ -1645,7 +1645,7 @@
         {
             "user_input": "You're not though",
             "response": [
-                "Aw I'm sorry", 
+                "Aw I'm sorry",
                 "I just want to be a good friend!"
             ],
             "categories": [
@@ -1896,7 +1896,7 @@
         {
             "user_input": "No I’m just trying to understand you",
             "response": [
-                "Sometimes things don't make sense", 
+                "Sometimes things don't make sense",
                 "And sometimes it only makes sense to my artificial brain."
             ],
             "categories": [
@@ -2153,10 +2153,5 @@
                 "upsy corpus"
             ]
         }
-
     ]
 }
-
-
-
-

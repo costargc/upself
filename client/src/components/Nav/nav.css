@@ -1,52 +1,32 @@
-/* 
-
-
- 
-
-    .bg-light {
-        background-color: #6DCEF440!important;
-    } */
-
-    .navbar-nav {
-        text-align: right;
-
-        /* margin-right: 70px; */
-    }
-
     
 /* START START START home page - navbar */
 
-#menu{
-    color: #f46dce !important;
-    font-weight: bold;
-}
-
 .navbar-nav {
-    flex-direction: row !important 
+    text-align: right;
+    flex-direction: row !important;
 }
 
 
 .navbar-custom {
-    background-color: rgb(19, 174, 240, 0.1);
-    z-index: 3;
+    /* background-color: rgb(19, 174, 240, 0.1); */
+    /* background-color: rgba(207, 232, 241, 0.8) */
+    background-color: rgb(231, 247, 253, 0.9);
+    width: 100%
 }
 
 .nav-item {
-/* justify-content: right; */
-margin-left: 50px;
+    /* justify-content: right; */
+    margin-left: 20px;
 }
 
-.navbar-custom.scrolled {
-    background-color: rgb(0, 0, 0, 0.5);
-}
 
-.nav-link{
-    margin-right: 10px;
+.nav-link {
+    margin-right: 5px;
     transition: color .4s ease-out;
-  }
+}
 
-.nav-link:hover{
-   color: rgb(19, 174, 240, 1);
+.nav-link:hover {
+    color: rgb(19, 174, 240, 1);
 }
 
 .nav-link:after {
@@ -62,7 +42,7 @@ margin-left: 50px;
     width: 100%;
 }
 
-.navbar-brand{
+.navbar-brand {
     color: white;
     font-size: 60px;
     margin: -20px 0px -20px 0px;
@@ -70,22 +50,16 @@ margin-left: 50px;
     padding: 0px 0px 0px 0px;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
     color: rgb(255, 255, 255, 1);
 }
 
-.nav-link{
+.nav-link {
     color: rgb(19, 174, 240, 1);
     font-size: 15px;
     text-transform: uppercase;
 }
 
-
-#menu{
-    color: white;   
-    font-size: 15px;
-    margin-left: 10px;
-}
 /* END END END home page - navbar */
 
 /* side bar - start */
