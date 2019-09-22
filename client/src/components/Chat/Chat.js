@@ -57,12 +57,14 @@ class Chat extends Component {
   }
  
   displayMessgae = response => {
+    renderCustomComponent(Typing, {}, true)
     // delaying the reply messgae to be 1 second (in the hops of having the Typing component display for that amount of time)
     setTimeout(() => {
 
-      addResponseMessage(`${response}`)
+      return addResponseMessage(`${response}`)
 
-    }, 1000);
+    }, 1000)
+    
   }
 
 
@@ -71,7 +73,7 @@ class Chat extends Component {
     // this.setState({isTyping: true})
     
     // this will pass the component Typing in, but we need that component to destroy itself... not sure how to do that
-    renderCustomComponent(Typing, {}, true)
+    // renderCustomComponent(Typing, {}, true)
 
     API.getMessageJaro(`${newMessage}`).then((response) => {
       console.log(`${response}`)
@@ -81,10 +83,29 @@ class Chat extends Component {
       if (typeof response1 !== "string" ) {
         
         // loop through the array and append the message on the page
-        for (var i = 0; i < response1.length; i++) {
-          this.displayMessgae(`${response1[i]}`)
-          // addResponseMessage(`${response1[i]}`)
-        }
+        // for (var i = 0; i < response1.length; i++) {
+        //   renderCustomComponent(Typing, {}, true)
+        //   // this.displayMessgae(`${response1[i]}`)
+        //   // addResponseMessage(`${response1[i]}`)
+
+        //     setTimeout(() => {
+        //       addResponseMessage(`${response}`)
+        //     }, 1000)            
+        // }
+        (async function loop() {
+          for (let i = 0; i < response1.length; i++) {
+
+            await new Promise(resolve => {
+              renderCustomComponent(Typing, {}, true)
+              setTimeout(resolve, 1000)
+
+            });
+
+            addResponseMessage(`${response1[i]}`)
+            console.log("for loop: " + i);
+            
+          }
+        })();
       }
 
       else {
