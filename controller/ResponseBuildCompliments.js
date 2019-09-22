@@ -11,73 +11,62 @@ mongoose.connect("mongodb+srv://dbaccess:dbaccess_password@upself-database-ruumc
 
 
 var ResponseBuildCompliments = function (userMessage) {
-    // var databaseresults = {};
+    var databaseresults = {};
     var ChatbotDataset = loadconversationfiles();
     var usermsg = userMessage;
     var score = [];
     var indexscore = [];
-    // var sendtodatabase = false;
+    var sendtodatabase = false;
 
     // thse are all responses that upsy has:
     console.log("ChatbotDataset size: " + ChatbotDataset.conversations.length);
 
     // get all scores + select select +0.95 responses
-    // for (var i = 0; i < ChatbotDataset.conversations.length; i++) {
-    //     // console.log(ChatbotDataset.conversations[i].user_input);
-    //     // console.log(usermsg.jaroWinkler(ChatbotDataset.conversations[i].user_input));
-    //     jarodata = jarodistance(usermsg, ChatbotDataset.conversations[i].user_input, { caseSensitive: false });
-    //     score.push(jarodata);
+    for (var i = 0; i < ChatbotDataset.conversations.length; i++) {
+        
+        jarodata = jarodistance(usermsg, ChatbotDataset.conversations[i].user_input, { caseSensitive: false });
+        score.push(jarodata);
 
-    //     if (isNaN(score[i])) {
-    //         score[i] = 0;
-    //     }
+        if (isNaN(score[i])) {
+            score[i] = 0;
+        }
 
-    //     if (score[i] > 0.95) {
-    //         indexscore.push(i);
-    //     }
+        if (score[i] > 0.95) {
+            indexscore.push(i);
+        }
 
-    // }
+    }
 
     // select best responses if none has a 0.95 score (nax_score - 0.1)
-    // if (indexscore.length == 0) {
+    if (indexscore.length == 0) {
 
-    //     var max_score = Math.max.apply(null, score);
-    //     for (i = 0; i < ChatbotDataset.conversations.length; i++) {
-    //         jarodata = jarodistance(usermsg, ChatbotDataset.conversations[i].user_input, { caseSensitive: false });
-    //         if (jarodata > (max_score - 0.05) && isNaN(score[i]) == false) {
-    //             indexscore.push(i);
-    //         }
-    //     }
+        var max_score = Math.max.apply(null, score);
+        for (i = 0; i < ChatbotDataset.conversations.length; i++) {
+            jarodata = jarodistance(usermsg, ChatbotDataset.conversations[i].user_input, { caseSensitive: false });
+            if (jarodata > (max_score - 0.05) && isNaN(score[i]) == false) {
+                indexscore.push(i);
+            }
+        }
 
-        // sendtodatabase = true;
-        // databaseresults.message = userMessage;
-        // databaseresults.score = max_score;
-    // }
+        // sendtodatabase = true;      // EB -- commenting this out on the ComplimentsChat page (limiting the responses that Upsy makes)
+        databaseresults.message = userMessage;
+        databaseresults.score = max_score;
+    }
 
-    // console.log(score);
 
     // randomize response
     var randomItem = indexscore[Math.floor(Math.random() * indexscore.length)];
     if (randomItem < 0 || randomItem == undefined) {
-        // if (randomItem < 0 || randomItem==undefined) {
         randomItem = 0;
     }
-    // // console.log(randomItem);
-    // // console.log(ChatbotDataset.conversations[randomItem].response);
 
-    // // console.log(ChatbotDataset.conversations[randomItem]);
-    // res.json(ChatbotDataset.conversations[randomItem].response);
-    // Debug
     
-    console.log("Jaro Score: " + jarodistance(usermsg, ChatbotDataset.conversations[randomItem].user_input, { caseSensitive: false }));
-    console.log("Inner Console: " + ChatbotDataset.conversations[randomItem].user_input);
+    
 
-    // databaseresults.response = ChatbotDataset.conversations[randomItem].response;
-    // db.CorpusTraining.count({ message: usermsg }).then(function (countervalue) {
-    //     databaseresults.counter = countervalue;
-    // });
+    databaseresults.response = ChatbotDataset.conversations[randomItem].response;
+    
 
-    // if (sendtodatabase == true) {
+    // if (sendtodatabase == true) {    // EB -- The sendtodatabase value is staying as false here
     //     db.CorpusTraining.create(databaseresults)
     //         .then(function (dbCorpusTraining) {
     //             // View the added result in the console
@@ -91,7 +80,7 @@ var ResponseBuildCompliments = function (userMessage) {
 
 
     return ChatbotDataset.conversations[randomItem].response;
-    //    return userMessage;
+
 };
 
 module.exports = ResponseBuildCompliments;
@@ -101,9 +90,7 @@ function loadconversationfiles() {
     var fs = require('fs');
     var ChatbotDataset_data = JSON.parse(fs.readFileSync('./controller/data/english/json/upsy_compliments.json'));
 
-    // market elements are returning an error...
-    // datavector = [];
-    // datavector = ["upsy_compliments"];
+    // datavector = ["upsy_compliments"]; //  EB -- this datavector is being referenced in the ChatbotDataset_data, so it's not needed here
 
     // var mergefile = [];
 
@@ -114,6 +101,5 @@ function loadconversationfiles() {
     //     }
     // }
 
-    // console.log(ChatbotDataset);
     return ChatbotDataset_data;
 }
