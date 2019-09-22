@@ -7,12 +7,9 @@ import React, { Component } from "react";
 import "react-chat-widget/lib/styles.css";
 
 const dots = {
-    width: "40px",
+    width: "50px",
 }
 
-// const hide = {
-//     display: "none"
-// }
 let myVar
 
 class Typing extends Component {
@@ -38,7 +35,7 @@ class Typing extends Component {
         if (this.state.dots) {
             return (
             <div>
-                <img style={dots} alt="typing dots" src={require("./typingImage/Ripple-1.4s-200px.gif")} />
+                    <img style={dots} alt="typing dots" src={require("./typingImage/Message-1s-200px.gif")} />
             </div>
             );
         }
