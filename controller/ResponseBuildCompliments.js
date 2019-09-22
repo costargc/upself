@@ -60,12 +60,8 @@ var ResponseBuildCompliments = function (userMessage) {
         randomItem = 0;
     }
 
-    
-    
-
     databaseresults.response = ChatbotDataset.conversations[randomItem].response;
     
-
     // if (sendtodatabase == true) {    // EB -- The sendtodatabase value is staying as false here
     //     db.CorpusTraining.create(databaseresults)
     //         .then(function (dbCorpusTraining) {
