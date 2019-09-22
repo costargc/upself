@@ -62,10 +62,20 @@
 
     .SprdMain .sprd-promo-expander {
         margin-top: 50px !important;
-        padding: 10px !important;
+        padding: 20px !important;
         width: 100% !important;
         overflow: auto !important;
     }
+
+    .SprdMain .sprd-button-secondary-cta-ghost:hover {
+        box-shadow: inset 0 0 0 2px !important;
+
+    }
+
+    .SprdMain .sprd-button-secondary-cta-ghost {
+        border-width: 2px !important;
+    }
+
 
     /* footer */
     .SprdMain .sprd-info-footer {
@@ -171,20 +181,38 @@
         padding: 0px;
     }
 
-    .navbar-nav {
-        text-align: right;
+    .sprd-burgermenu {
+        z-index: 9999 !important;
     }
 
-    /* START START START home page - navbar */
+    /* #sprd-main {
+        z-index: !important;
+        position: relative !important;
+        height: auto !important;
+        min-height: 100vh !important;
+        box-sizing: border-box !important;
+        font-size: 1rem !important;
+    } */
 
-    #menu {
-        color: #f46dce !important;
-        font-weight: bold;
-        color: white;
-        font-size: 15px;
-        margin-left: 10px;
+    .sprd-burgermenu__inner {
+        margin-top: 80px;
     }
 
+    a.sprd-burgermenu__title {
+        display: none !important;
+    }
+
+    .SprdMain .sprd-burgermenu__close {
+        float: right !important;
+    }
+
+    .SprdMain .sprd-burgermenu__header {
+        display: flex !important;
+        float: right !important;
+        border-bottom-style: none !important;
+    }
+
+    
     .sprd-department-filter {
         display: none !important;
     }
@@ -193,22 +221,8 @@
         display: none !important;
     }
 
-    .navbar-nav {
-        flex-direction: row !important
-    }
 
-
-    .navbar-custom {
-        /* background-color: rgb(19, 174, 240, 0.1); */
-        background-color: hsla(196, 55%, 88%, 0.8)
-    }
-
-    .nav-item {
-        /* justify-content: right; */
-        margin-left: 20px;
-    }
-
-    .SprdMain .sprd-listpage__header{
+    .SprdMain .sprd-listpage__header {
         height: 10px !important;
     }
 
@@ -216,10 +230,46 @@
         padding-top: 70px !important;
     }
 
-    .navbar-custom.scrolled {
-        /* EB - what is this pointing to? */
-        background-color: rgb(0, 0, 0, 0.5);
+
+    .navbar-nav {
+        flex-direction: row !important
     }
+
+    
+    #menu {
+        color: #f46dce !important;
+        font-weight: bold;
+        color: white;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+
+
+    /* START START START home page - navbar */
+
+
+    .navbar-custom {
+        z-index: 9999 !important;
+    }
+
+
+    .navbar-nav {
+        text-align: right;
+    }
+
+
+    .navbar-custom {
+        /* background-color: rgb(19, 174, 240, 0.1); */
+        /* background-color: rgba(207, 232, 241, 0.8) */
+        background-color: rgb(231, 247, 253, 0.9)
+    }
+
+    .nav-item {
+        /* justify-content: right; */
+        margin-left: 20px;
+    }
+
 
     .nav-link {
         margin-right: 5px;
@@ -249,90 +299,6 @@
         margin: -20px 0px -20px 0px;
         border: 0px 0px 0px 0px;
         padding: 0px 0px 0px 0px;
-    }
-
-    .SprdMain .sprd-burgermenu {
-        /* z-index: 9999 !important; */
-    }
-
-    .SprdMain .sprd-burgermenu__inner {
-        /* z-index: 9999 !important;         */
-    }
-
-    /* sprd-burgermenu sprd-bg-m1  */
-
-    /* id = sprd-main */
-    #sprd-header-container {
-        /* z-index: 10 !important; */
-    }
-
-    .SprdMain--jsIntegrated {
-        /* z-index: 9999 !important; */
-    }
-
-    #sprd-main.SprdMain--jsIntegrated {
-        /* z-index: 10 !important; */
-    }
-
-    .sprd-burgermenu {
-        z-index: 9999 !important;
-    }
-
-    /* #sprd-main {
-        z-index: !important;
-        position: relative !important;
-        height: auto !important;
-        min-height: 100vh !important;
-        box-sizing: border-box !important;
-        font-size: 1rem !important;
-    } */
-
-    .sprd-burgermenu__inner {
-        margin-top: 80px;
-    }
-
-    a.sprd-burgermenu__title {
-        display: none !important;
-    }
-
-    .SprdMain .sprd-burgermenu__close{
-        float: right !important;
-    }
-
-    .SprdMain .sprd-burgermenu__header {
-    display: flex !important;
-    float: right !important;
-    border-bottom-style: none !important;
-    }
-
-    /* sprd-burgermenu sprd-bg-m1 sprd-c-s3 sprd-burgermenu--open */
-
-
-    /* SprdMain SprdMain--jsIntegrated customPageBackground */
-
-
-    .SprdMain .sprd-product-list {
-        z-index: 10 !important;
-    }
-
-    .navbar-custom {
-        z-index: 9999 !important;
-    }
-
-    #myShop {
-        /* z-index: 9999 !important; */
-    }
-
-    .SprdMain .SprdMain--jsIntegrated .customPageBackground {
-        /* z-index: 9999 !important;   */
-    }
-
-    .sprd-burgermenu--open {
-        /* z-index: 9999 !important; */
-    }
-
-    .SprdMain .sprd-burgermenu__inner {
-        /* z-index: 9999 !important;   */
     }
 
     .navbar-brand:hover {
