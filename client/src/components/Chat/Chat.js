@@ -17,22 +17,10 @@ import logo from "../../assets/images/check/check1.svg";
 
 class Chat extends Component {
 
-
-  constructor() {
-    super()
-    this.state = { renderChild: true };
-    // this.handleChildUnmount = this.handleChildUnmount.bind(this);
-  }
-
   state = {
     logo: logo,
-    // renderChild: true,
   };
 
-  // possible use for the unmount? (not sure how to get this working)
-  // handleChildUnmount() {
-  //   this.setState({ renderChild: false });
-  // }
 
   componentDidMount() {
     addResponseMessage("Hi! How are you doing today?");
@@ -54,8 +42,10 @@ class Chat extends Component {
   // Used for single responses in the chat
   displayMessgae = response => {
 
-    // shows the typing dots
-    renderCustomComponent(Typing, {}, true)
+    // shows the typing dots 
+    // -------> POSSIBLE FIX: IF THE CHAT BUTTON IS CLICKED, DON'T RENDERCUSTOMCOMPONENT. ONLY RENDER WHEN THE MESSGAE IS SUBMITTED (vs page is reloaded)
+
+    renderCustomComponent(Typing, { })
 
     // delaying the reply messgae to be 1 second (in the hops of having the Typing component display for that amount of time)
     setTimeout(() => {
