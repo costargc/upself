@@ -21,10 +21,6 @@ class Chat extends Component {
     logo: logo,
   };
 
-  // possible use for the unmount? (not sure how to get this working)
-  // handleChildUnmount() {
-  //   this.setState({ renderChild: false });
-  // }
 
   componentDidMount() {
     addResponseMessage("Hi! How are you doing today?");
