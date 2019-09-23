@@ -48,7 +48,8 @@ class Chat extends Component {
 
     // shows the typing dots 
     // -------> POSSIBLE FIX: IF THE CHAT BUTTON IS CLICKED, DON'T RENDERCUSTOMCOMPONENT. ONLY RENDER WHEN THE MESSGAE IS SUBMITTED (vs page is reloaded)
-    renderCustomComponent(Typing, {})
+
+    renderCustomComponent(Typing, { })
 
     // delaying the reply messgae to be 1 second (in the hops of having the Typing component display for that amount of time)
     setTimeout(() => {
