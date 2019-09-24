@@ -7,7 +7,7 @@ function TeamMember(props) {
   return (
 
     <div className="col-lg-3 col-md-6 mb-lg-0 mb-5">
-      <div class="avatar mx-auto">
+      <div className="avatar mx-auto">
         <img
           src={props.Image}
           className="rounded-circle z-depth-1"
