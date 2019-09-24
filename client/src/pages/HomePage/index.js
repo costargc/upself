@@ -4,6 +4,8 @@ import Landing from "../../components/Landing/Landing";
 import TechUsed from "../../components/TechUsed/TechUsed";
 import WhatUpsyDo from "../../components/WhatUpsyDo/WhatUpsyDo";
 import Chat from "../../components/Chat/Chat";
+import Team from "../../components/Team/Team";
+import MidImage from "../../components/MidImage/MidImage";
 import Nav from "../../components/Nav/Nav";
 
 class HomePage extends Component {
@@ -16,8 +18,10 @@ class HomePage extends Component {
                 <WhatUpsyDo />
                 <TechUsed />
                 <Chat />
+                <MidImage />
+                <Team />
             </main>
-         
+
         );
     }
 }
