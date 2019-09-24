@@ -1,19 +1,21 @@
 import React, { Component } from "react";
 import HomePage from "./pages/HomePage"
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import Page404 from "./pages/Page404"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
 class App extends Component {
-
   render() {
     return (
+
       <Router>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/swag" render={() => { window.location.href = "./swag.html#!/all" }} />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/swag" render={() => { window.location.href = "./swag.html#!/all" }} />
+          <Route component={Page404} />
+        </Switch>
       </Router>
-      // <main className="App">
-      //   <HomePage />
-      // </main>
+
     );
   }
 }
