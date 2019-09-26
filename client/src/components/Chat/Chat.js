@@ -69,7 +69,7 @@ class Chat extends Component {
 
             // waits for the whole setTimeout to complete before moving to other indexes in the response array
             await new Promise(resolve => {
-              renderCustomComponent(Typing, {}, true)
+              renderCustomComponent(Typing, {})
               setTimeout(resolve, 1000)
 
             });
