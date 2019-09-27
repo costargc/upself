@@ -16,27 +16,18 @@ import "react-chat-widget/lib/styles.css";
 import logo from "../../assets/images/check/check1.svg";
 
 class Chat extends Component {
-
-  state = {
+constructor(props) {
+  super(props);
+  this.state = {
     logo: logo,
+    reload: false
   };
+}
+  
 
 
   componentDidMount() {
     addResponseMessage("Hi! How are you doing today?");
-
-    // this is a text for the link
-    // addLinkSnippet(
-    //   {
-    //     title: 'My awesome link',
-    //     link: 'https://www.google.com',
-    //     target: '_blank'
-    //   }
-    // );
-
-    // white msg as a user - to be used after a button is clicked
-    // addUserMessage("this is a test as a user");
-
   }
 
   // Used for single responses in the chat
@@ -44,13 +35,11 @@ class Chat extends Component {
 
     // shows the typing dots 
     // -------> POSSIBLE FIX: IF THE CHAT BUTTON IS CLICKED, DON'T RENDERCUSTOMCOMPONENT. ONLY RENDER WHEN THE MESSGAE IS SUBMITTED (vs page is reloaded)
-
-    renderCustomComponent(Typing, { })
-
+    renderCustomComponent(Typing, {reload: this.reload})
+  
     // delaying the reply messgae to be 1 second (in the hops of having the Typing component display for that amount of time)
     setTimeout(() => {
       return addResponseMessage(`${response}`)
-
     }, 1000)
   }
 
@@ -69,15 +58,13 @@ class Chat extends Component {
 
             // waits for the whole setTimeout to complete before moving to other indexes in the response array
             await new Promise(resolve => {
-              renderCustomComponent(Typing, {}, true)
+              renderCustomComponent(Typing, {})
               setTimeout(resolve, 1000)
-
             });
 
             // shows the typing dots when upsy is typing
             addResponseMessage(`${response1[i]}`)
             console.log("for loop: " + i);
-
           }
         })();
       }
@@ -85,7 +72,6 @@ class Chat extends Component {
       else {
         this.displayMessgae(`${response}`)
       }
-
     });
 
     // Now send the message throught the backend API
