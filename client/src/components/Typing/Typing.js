@@ -12,7 +12,7 @@ constructor(props) {
     super (props);
     this.state = {
         dots: true,
-        reload: false, // use this to determine if the 
+        reload: false, // use this to determine how the chat is rendered
     }
 }
     
