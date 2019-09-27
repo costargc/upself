@@ -8,9 +8,18 @@ const dots = {
 let myVar
 
 class Typing extends Component {
-
-    state = {
+constructor(props) {
+    super (props);
+    this.state = {
         dots: true,
+        reload: false, // use this to determine if the 
+    }
+}
+    
+    componentDidMount(props) {
+        // check what button was clicked
+        // update this.state.reload appropriately (false if from chat, true if from reload)
+        // conditionally render the component to check for dots true/false and reload true/false
     }
 
     myVar = setTimeout(() => {
@@ -25,7 +34,7 @@ class Typing extends Component {
 
 
     render(props) {
-        if (this.state.dots) {
+        if (this.state.dots && !this.state.reload) {
             return (
                 <div>
                     <img style={dots} alt="typing dots" src={require("./typingImage/Message-1s-200px.gif")} />
