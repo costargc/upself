@@ -1,20 +1,21 @@
 import React, { Component } from "react";
-import "./App.css";
-import Landing from "./components/Landing/Landing";
-import TechUsed from "./components/TechUsed/TechUsed";
-import WhatUpsyDo from "./components/WhatUpsyDo/WhatUpsyDo";
-import Chat from "./components/Chat/Chat";
+import HomePage from "./pages/HomePage"
+import Page404 from "./pages/Page404"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 
 class App extends Component {
-
   render() {
     return (
-      <main className="App">
-        <Landing />
-        <WhatUpsyDo />
-        <TechUsed />
-        <Chat />
-      </main>
+
+      <Router>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/swag" render={() => { window.location.href = "./swag.html#!/all" }} />
+          <Route component={Page404} />
+        </Switch>
+      </Router>
+
     );
   }
 }

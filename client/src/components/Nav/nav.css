@@ -1,0 +1,161 @@
+    
+/* START START START home page - navbar */
+
+.navbar-nav {
+    text-align: right;
+    flex-direction: row !important;
+}
+
+
+.navbar-custom {
+    /* background-color: rgb(19, 174, 240, 0.1); */
+    /* background-color: rgba(207, 232, 241, 0.8) */
+    background-color: rgb(231, 247, 253, 0.9);
+    width: 100%
+}
+
+.nav-item {
+    /* justify-content: right; */
+    margin-left: 20px;
+}
+
+
+.nav-link {
+    margin-right: 5px;
+    transition: color .4s ease-out;
+}
+
+.nav-link:hover {
+    color: rgb(19, 174, 240, 1);
+}
+
+.nav-link:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: rgb(19, 174, 240, 1);
+    transition: 300ms;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 60px;
+    margin: -20px 0px -20px 0px;
+    border: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.navbar-brand:hover {
+    color: rgb(255, 255, 255, 1);
+}
+
+.nav-link {
+    color: rgb(19, 174, 240, 1);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/* END END END home page - navbar */
+
+/* side bar - start */
+#dismiss{
+    display: none;
+  }
+
+/*
+  
+  @media (max-width: 991px) {
+
+  #navbar-sidebar {
+      position: fixed;
+      top: 0;
+      opacity: 0;
+      left: -270px;
+      display: block;
+      width: 270px;
+      height: 100vh; 
+      z-index: 999;
+      background: rgb(255, 255, 255, 1); 
+      overflow-y: hidden;
+      padding: 0 15px;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+
+      transition: all 0.3s ease-in;
+  }
+
+  .nav-link{
+    color: black;
+    font-size: 15px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .nav-link:hover{
+    color: rgb(19, 174, 240, 1);
+    text-decoration: none;
+  }
+
+  .nav-link:after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: rgb(19, 174, 240, 0);
+    transition: 300ms;
+  }
+
+.nav-link:hover:after {
+    width: 100%;
+}
+  
+  #navbar-sidebar.active {
+      left: 0;
+      opacity:1;
+ }
+
+  
+  #dismiss {
+      display: block;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+    
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+
+      transition: all 0.3s;
+  }
+  
+  #dismiss:hover {
+      background: #fff;
+      color: #666;
+  }
+
+  .overlay {
+      display: none;
+      opacity: 0;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 998;
+      transition: all 0.5s ease-in-out;
+  }
+  .overlay.active {
+      display: block;
+      opacity: 1;
+  }  
+    }
+ */
+
+  /* side bar - end */

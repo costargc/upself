@@ -39,21 +39,31 @@ function Landing() {
         className="col-12"
         style={{ textAlign: "center", paddingTop: "30px" }}
       >
+        <h4> Try our beta mobile apps:</h4>
+      </div>
+      <div
+        className="col-12"
+        style={{ textAlign: "center", paddingTop: "30px" }}
+      >
         <div style={{ border: "200px" }}>
-          <img
-            id="applink"
-            style={{ opacity: 1, margin: "5px" }}
-            src={require("../../assets/images/app_store_badge.png")}
-            height="40"
-            alt="appstore"
-          />
-          <img
-            id="applink"
-            style={{ opacity: 1, margin: "5px" }}
-            src={require("../../assets/images/google_play_badge.png")}
-            height="40"
-            alt="googleplay"
-          />
+          <a href="https://testflight.apple.com/join/zvNj1Hgj">
+            <img
+              id="applink"
+              style={{ opacity: 1, margin: "5px" }}
+              src={require("../../assets/images/app_store_badge.png")}
+              height="40"
+              alt="appstore"
+            />
+          </a>
+          <a href="https://expo.io/@mgilliland23/UpselfMobileExpo">
+            <img
+              id="applink"
+              style={{ opacity: 1, margin: "5px" }}
+              src={require("../../assets/images/google_play_badge.png")}
+              height="40"
+              alt="googleplay"
+            />
+          </a>
         </div>
       </div>
     </div>

@@ -31,6 +31,22 @@ function getMessageJaro(message) {
 
 };
 
+// duplicated the original getMessageJaro just for compliments
+function getCompliment(message) {
+  return axios.post("/api/jaroCompliment", {
+    params: { userMessage: message }
+  }).then(
+    response => {
+      // console.log(response.data);
+      return response.data;
+    },
+    error => {
+      console.log(error);
+    }
+  );
+
+};
 
 
-export default { getMessageAnalysis, getMessageJaro }
+
+export default { getMessageAnalysis, getMessageJaro, getCompliment }

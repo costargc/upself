@@ -1,11 +1,19 @@
 var jarodistance = require('jaro-winkler');
+var mongoose = require("mongoose");
 var fs = require('fs');
 
+var db = require("../models");
+var database_name = "upself_PROD";
+mongoose.connect("mongodb+srv://dbaccess:dbaccess_password@upself-database-ruumc.mongodb.net/"+database_name+"?retryWrites=true&w=majority", { useNewUrlParser: true });
+
+
 var ResponseBuild = function (userMessage) {
+    var databaseresults = {};
     var ChatbotDataset = loadconversationfiles();
     var usermsg = userMessage;
     var score = [];
     var indexscore = [];
+    var sendtodatabase = false;
 
     // thse are all responses that upsy has:
     console.log("ChatbotDataset size: " + ChatbotDataset.conversations.length);
@@ -29,6 +37,7 @@ var ResponseBuild = function (userMessage) {
 
     // select best responses if none has a 0.95 score (nax_score - 0.1)
     if (indexscore.length == 0) {
+
         var max_score = Math.max.apply(null, score);
         for (i = 0; i < ChatbotDataset.conversations.length; i++) {
             jarodata = jarodistance(usermsg, ChatbotDataset.conversations[i].user_input, { caseSensitive: false });
@@ -36,6 +45,10 @@ var ResponseBuild = function (userMessage) {
                 indexscore.push(i);
             }
         }
+
+        sendtodatabase = true;
+        databaseresults.message = userMessage;
+        databaseresults.score = max_score;
     }
 
     // console.log(score);
@@ -52,9 +65,28 @@ var ResponseBuild = function (userMessage) {
     // // console.log(ChatbotDataset.conversations[randomItem]);
     // res.json(ChatbotDataset.conversations[randomItem].response);
     // Debug
-    console.log("test jaro: " + jarodistance("hey", "hey", { caseSensitive: false }));
-
+    
+    console.log("Jaro Score: " + jarodistance(usermsg, ChatbotDataset.conversations[randomItem].user_input, { caseSensitive: false }));
     console.log("Inner Console: " + ChatbotDataset.conversations[randomItem].user_input);
+
+    databaseresults.response = ChatbotDataset.conversations[randomItem].response;
+    // db.CorpusTraining.count({ message: usermsg }).then(function (countervalue) {
+    //     databaseresults.counter = countervalue;
+    // });
+
+    if (sendtodatabase == true) {
+        db.CorpusTraining.create(databaseresults)
+            .then(function (dbCorpusTraining) {
+                // View the added result in the console
+                console.log("dbCorpusTraining: " + dbCorpusTraining);
+            })
+            .catch(function (err) {
+                // If an error occurred, log it
+                console.log("ERROR dbCorpusTraining: " + err);
+            });
+    }
+
+
     return ChatbotDataset.conversations[randomItem].response;
     //    return userMessage;
 };
@@ -68,7 +100,7 @@ function loadconversationfiles() {
 
     // market elements are returning an error...
     // datavector = [];
-    datavector = ["upsy_compliments","ai", "botprofile", "computers", "conversations", "emotion", "food", "gossip", "greetings", "health", "history", "humor", "literature", "money", "movies", "politics", "psychology", "science", "sports", "trivia"];
+    datavector = ["upsy_compliments", "ai", "botprofile", "computers", "conversations", "emotion", "food", "gossip", "greetings", "health", "history", "humor", "literature", "money", "movies", "politics", "psychology", "science", "sports", "trivia"];
 
     var mergefile = [];
     // for (var j = 0; j < datavector.length; j++) {
