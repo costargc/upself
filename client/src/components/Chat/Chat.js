@@ -3,10 +3,9 @@ import "./chat.css";
 // import Chat_img from "../Chat_img/Chat_img";
 import API from "../../utils/API";
 
-
 import {
   Widget,
-  addResponseMessage,
+  addResponseMessage
   // addLinkSnippet,
   // addUserMessage,
   // renderCustomComponent
@@ -15,18 +14,13 @@ import {
 import "react-chat-widget/lib/styles.css";
 import logo from "../../assets/images/check/check1.svg";
 
-
 class Chat extends Component {
   state = {
     logo: logo
   };
 
-
   componentDidMount() {
     addResponseMessage("Hi! How are you doing today?");
-
-
-
 
     // this is a text for the link
     // addLinkSnippet(
@@ -42,7 +36,6 @@ class Chat extends Component {
 
     // renderCustomComponent(<Chat_img link="../../assets/images/upsy_friend.svg"/>);
     // renderCustomComponent(Chat_img,{link: require("../../assets/images/upsy_help.svg")},true);
-
   }
 
   handleNewUserMessage = newMessage => {
@@ -54,10 +47,11 @@ class Chat extends Component {
 
     // echo bot
 
-
     // smart lvl0 bot
-  
-    API.getMessageJaro(`${newMessage}`).then(function (response) {
+
+    API.getMessageJaro(`${newMessage}`).then(function(response) {
+      //check if array
+
       addResponseMessage(`${response}`);
       // console.log(response);
     });

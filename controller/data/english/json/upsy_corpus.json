@@ -1,6 +1,27 @@
 {
     "conversations": [
         {
+            "user_input": "Hello",
+            "response": "Hey!",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Hello",
+            "response": "Hey there!",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
+            "user_input": "Hello",
+            "response": "What's up",
+            "categories": [
+                "upsy corpus"
+            ]
+        },
+        {
             "user_input": "Hi there",
             "response": "Hey!",
             "categories": [
