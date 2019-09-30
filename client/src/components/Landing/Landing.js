@@ -39,8 +39,14 @@ function Landing() {
         className="col-12"
         style={{ textAlign: "center", paddingTop: "30px" }}
       >
+        <h4> Try our beta mobile apps:</h4>
+      </div>
+      <div
+        className="col-12"
+        style={{ textAlign: "center", paddingTop: "30px" }}
+      >
         <div style={{ border: "200px" }}>
-          <a href="/apple">
+          <a href="https://testflight.apple.com/join/zvNj1Hgj">
             <img
               id="applink"
               style={{ opacity: 1, margin: "5px" }}
@@ -49,7 +55,7 @@ function Landing() {
               alt="appstore"
             />
           </a>
-          <a href="/android">
+          <a href="https://expo.io/@mgilliland23/UpselfMobileExpo">
             <img
               id="applink"
               style={{ opacity: 1, margin: "5px" }}

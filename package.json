@@ -21,6 +21,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "bluebird": "^3.5.5",
+    "cors": "^2.8.5",
     "dotenv": "^8.1.0",
     "express": "^4.16.3",
     "ibm-watson": "^4.4.0",
