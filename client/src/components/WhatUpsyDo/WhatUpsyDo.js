@@ -44,7 +44,7 @@ function WhatUpsyDo() {
             // float: "left"
           }}
         >
-          Upsy can give you an emergency compliment!{" "}
+          Upsy can give you an emergency compliment{" "}
           <span style={{ fontSize: "12px" }}>(we all need that)</span>
         </div>
         <div className="col-md-1"></div>
@@ -76,7 +76,7 @@ function WhatUpsyDo() {
             // float: "left"
           }}
         >
-          Upsy can help you throw away big stressful thoughts!
+          Upsy can help you throw away big stressful thoughts
         </div>
         <div className="col-md-1"></div>
       </div>
@@ -107,7 +107,7 @@ function WhatUpsyDo() {
             // float: "left"
           }}
         >
-          Upsy can measure your anxiety and depression level!
+          Upsy can measure your anxiety and depression level
         </div>
         <div className="col-md-1"></div>
       </div>
@@ -140,7 +140,7 @@ function WhatUpsyDo() {
         >
           Upsy can talk to you!{" "}
           <span style={{ fontSize: "12px" }}>
-            (I'm still learning how to chat - it's really really hard!)
+            (I'm learning how to chat)
           </span>
         </div>
         <div className="col-md-1"></div>
