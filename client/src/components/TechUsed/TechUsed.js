@@ -58,7 +58,7 @@ function TechUsed() {
         }}
       >
         <div>
-          <h1> Technology we use</h1>
+          <h1> Technology used</h1>
         </div>
       </div>
 
