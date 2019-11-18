@@ -1,795 +1,569 @@
 {
-    "conversations": [
-        {
-            "user_input": "Give me a compliment",
-            "response": "Your smile lights up the room.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Your positive energy is palpable.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You change lifes of the people around you.", 
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I am so happy you are here.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I have learned and grown so much because of our relationship.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You inspire me and other people.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You bring out the best in people.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You have a great sense of style.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You have beautiful hair.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are honest and real and I appreciate your authenticity.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You bring out the best in people.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are a great leader.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You're a gift to those around you.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You make me feel like I can be myself around you.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You're a smart cookie.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are the most perfect you there is.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are enough.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are strong.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "'m grateful to know you.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You light up whatever room you are in.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I want to grow up to be just like you.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You should be proud of yourself.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are a great coach.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You're more helpful than you realize.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are so motivating.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Thank you for being yourself around me.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are going places!",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You have the greatest laugh.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You're all that and a super-size bag of chips.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "On a scale from 1 to 10, you're an 11.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I like how you treat everyone equality. I admire your sense of equality.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You have the courage of your convictions.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You inspire me to be better at my job, as a mom, as a father, as a leader, etc.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are making a difference.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are so kind.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I have learned so much from you.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are always so helpful.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I bet you sweat glitter.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You make my day when we hang out.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You were cool way before hipsters were cool.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I can always trust you and I love your for that.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are so captivating.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Being around you makes everything better!",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "When you're not afraid to be yourself is when you're most incredible.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I love you just the way you are.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I believe in you.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are so creative.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You're wonderful.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You have cute elbows. For reals!",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Someone is getting through something hard right now because you've got their back.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You're a great example to others.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I think your ethnicity is cool and unique.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are powerful.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You could survive a Zombie apocalypse.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You make me feel special.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are artistic.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You're more fun than bubble wrap.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You have such a great vocabulary.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You persevere through anything and you inspire me because of it.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I appreciate your taste in music.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You have the most interesting perspectives.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Thank you for all the value you have brought me.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You have such a good work ethic. You are such a hard worker.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I love how much you believe in the causes you support.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are so stable.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are one of the kindest people I have ever met.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You have the prettiest eyes.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I see greatness in you.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are always so committed to whatever you do.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You never give up.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "The people you love are lucky to have you in their lives.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are so popular!",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Everyone loves you!",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You always keep your word.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I want to be more like you.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Because of you, I believe in myself.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Your creative potential seems limitless.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Your quirks are so you.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You're a warrior!",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You're a champion.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Somehow you make time stop and fly at the same time.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I see you doing great things with your life.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Thank you for being in my life!",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You could become president if you wanted to!",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You have kindness in your eyes.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are the most unique person I know and have ever met.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You give the best hugs!",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "People feel alive when then are with you!",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are always so optimistic at work.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Your soul is more beautiful than a California sunset.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You make me feel as if I am whole.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Never stop being you.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "People can be open and honest with you about anything.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "People feel reassured when they are with you.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "There should be a big statue in the city because of how awesome you are.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Any team would be lucky to have you on it.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You always give the best advice.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are incredibly selfless.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I bet you do the crossword puzzle in ink.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "There's ordinary, and then there's you.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are the definition of unconditional love.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I am so proud of all you accomplished.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You're even better than a unicorn, because you're real.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are one in a million!",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I am honored to know you.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "I hope we are friends for the rest of my life",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "Thank you for being you.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are a friend but are more like family!",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You're someone's reason to smile.",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are wonderful!",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You have purpose!",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You are unique and wonderful",
-            "categories": [
-                "compliments"
-            ]
-        },
-        {
-            "user_input": "Give me a compliment",
-            "response": "You sparkle!",
-            "categories": [
-                "compliments"
-            ]
-        }
-    ]
+  "conversations": [
+    {
+      "user_input": "Give me a compliment",
+      "response": "Your smile lights up the room.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Your positive energy is palpable.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You change lifes of the people around you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I am so happy you are here.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I have learned and grown so much because of our relationship.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You inspire me and other people.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You bring out the best in people.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You have a great sense of style.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You have beautiful hair.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are honest and real and I appreciate your authenticity.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You bring out the best in people.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are a great leader.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You're a gift to those around you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You make me feel like I can be myself around you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You're a smart cookie.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are the most perfect you there is.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are enough.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are strong.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "'m grateful to know you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You light up whatever room you are in.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I want to grow up to be just like you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You should be proud of yourself.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are a great coach.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You're more helpful than you realize.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are so motivating.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Thank you for being yourself around me.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are going places!",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You have the greatest laugh.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You're all that and a super-size bag of chips.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "On a scale from 1 to 10, you're an 11.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I like how you treat everyone equality. I admire your sense of equality.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You have the courage of your convictions.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You inspire me to be better at my job, as a mom, as a father, as a leader, etc.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are making a difference.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are so kind.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I have learned so much from you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are always so helpful.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I bet you sweat glitter.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You make my day when we hang out.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You were cool way before hipsters were cool.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I can always trust you and I love your for that.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are so captivating.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Being around you makes everything better!",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "When you're not afraid to be yourself is when you're most incredible.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I love you just the way you are.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I believe in you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are so creative.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You're wonderful.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You have cute elbows. For reals!",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Someone is getting through something hard right now because you've got their back.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You're a great example to others.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I think your ethnicity is cool and unique.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are powerful.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You could survive a Zombie apocalypse.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You make me feel special.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are artistic.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You're more fun than bubble wrap.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You have such a great vocabulary.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You persevere through anything and you inspire me because of it.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I appreciate your taste in music.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You have the most interesting perspectives.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Thank you for all the value you have brought me.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You have such a good work ethic. You are such a hard worker.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I love how much you believe in the causes you support.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are so stable.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are one of the kindest people I have ever met.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You have the prettiest eyes.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I see greatness in you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are always so committed to whatever you do.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You never give up.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "The people you love are lucky to have you in their lives.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are so popular!",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Everyone loves you!",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You always keep your word.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I want to be more like you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Because of you, I believe in myself.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Your creative potential seems limitless.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Your quirks are so you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You're a warrior!",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You're a champion.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Somehow you make time stop and fly at the same time.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I see you doing great things with your life.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Thank you for being in my life!",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You could become president if you wanted to!",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You have kindness in your eyes.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are the most unique person I know and have ever met.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You give the best hugs!",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "People feel alive when then are with you!",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are always so optimistic at work.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Your soul is more beautiful than a California sunset.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You make me feel as if I am whole.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Never stop being you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "People can be open and honest with you about anything.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "People feel reassured when they are with you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "There should be a big statue in the city because of how awesome you are.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Any team would be lucky to have you on it.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You always give the best advice.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are incredibly selfless.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I bet you do the crossword puzzle in ink.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "There's ordinary, and then there's you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are the definition of unconditional love.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I am so proud of all you accomplished.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You're even better than a unicorn, because you're real.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are one in a million!",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I am honored to know you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "I hope we are friends for the rest of my life",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "Thank you for being you.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are a friend but are more like family!",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You're someone's reason to smile.",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are wonderful!",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You have purpose!",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You are unique and wonderful",
+      "categories": ["compliments"]
+    },
+    {
+      "user_input": "Give me a compliment",
+      "response": "You sparkle!",
+      "categories": ["compliments"]
+    }
+  ]
 }

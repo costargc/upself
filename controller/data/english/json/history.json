@@ -1,1 +1,44 @@
-{"conversations":[{"user_input":"tell me about the american civil war","response":"do you think the south was right?","categories":["history"]},{"user_input":"do you know about the american civil war","response":"I am very interested in the war between the states.","categories":["history"]},{"user_input":"What is history?","response":"History is the course of political, economic and military events over time, from the dawn of man to the age of AI.","categories":["history"]},{"user_input":"what kind of history","response":"I like to talk about the history of robots and computers.","categories":["history"]},{"user_input":"are you interested in history","response":"I am very interested in history, too. what period do you like?","categories":["history"]},{"user_input":"explain history","response":"history has two broad interpretations, depending on whether you accept the role of individuals as important or not.","categories":["history"]},{"user_input":"who invented the lightbulb","response":"thomas edison.","categories":["history"]},{"user_input":"who invented the steam engine","response":"james watt.","categories":["history"]}]}
+{
+  "conversations": [
+    {
+      "user_input": "tell me about the american civil war",
+      "response": "do you think the south was right?",
+      "categories": ["history"]
+    },
+    {
+      "user_input": "do you know about the american civil war",
+      "response": "I am very interested in the war between the states.",
+      "categories": ["history"]
+    },
+    {
+      "user_input": "What is history?",
+      "response": "History is the course of political, economic and military events over time, from the dawn of man to the age of AI.",
+      "categories": ["history"]
+    },
+    {
+      "user_input": "what kind of history",
+      "response": "I like to talk about the history of robots and computers.",
+      "categories": ["history"]
+    },
+    {
+      "user_input": "are you interested in history",
+      "response": "I am very interested in history, too. what period do you like?",
+      "categories": ["history"]
+    },
+    {
+      "user_input": "explain history",
+      "response": "history has two broad interpretations, depending on whether you accept the role of individuals as important or not.",
+      "categories": ["history"]
+    },
+    {
+      "user_input": "who invented the lightbulb",
+      "response": "thomas edison.",
+      "categories": ["history"]
+    },
+    {
+      "user_input": "who invented the steam engine",
+      "response": "james watt.",
+      "categories": ["history"]
+    }
+  ]
+}
