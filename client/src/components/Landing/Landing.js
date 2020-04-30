@@ -46,7 +46,7 @@ function Landing() {
         style={{ textAlign: "center", paddingTop: "30px" }}
       >
         <div style={{ border: "200px" }}>
-          <a target="_blank" href="https://testflight.apple.com/join/zvNj1Hgj">
+          <a target="_blank" href="https://apps.apple.com/us/app/upself-mobile/id1510662516">
             <img
               id="applink"
               style={{ opacity: 1, margin: "5px" }}
@@ -55,7 +55,7 @@ function Landing() {
               alt="appstore"
             />
           </a>
-          <a target="_blank" href="https://expo.io/@mgilliland23/UpselfMobileExpo">
+          <a target="_blank" href="https://expo.io/@costargc/UpselfMobileExpo">
             <img
               id="applink"
               style={{ opacity: 1, margin: "5px" }}
