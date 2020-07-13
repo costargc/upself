@@ -51,53 +51,32 @@
     /* gray background color #F2F2F2 */
 
 
+    /* SPREADSHOP */
     /* Title or image from spreadshop at the top of the page */
-    .sprd-header__image {
-        display: none !important;
+    #sprd-header-container {
+        padding-top: 66px;
     }
-
-    .sprd-header__title {
-        display: none !important;
-    }
-
-    .SprdMain .sprd-promo-expander {
-        margin-top: 50px !important;
-        padding: 20px !important;
-        width: 100% !important;
-        overflow: auto !important;
-    }
-
-    .SprdMain .sprd-button-secondary-cta-ghost:hover {
-        box-shadow: inset 0 0 0 2px !important;
-
-    }
-
-    .SprdMain .sprd-button-secondary-cta-ghost {
-        border-width: 2px !important;
-    }
-
-
-    /* footer */
-    .SprdMain .sprd-info-footer {
-        display: none !important;
-    }
-
-    /* link that says to open up your own spreadshop */
-    #buttonSpreadshirt {
-        display: none !important;
-    }
-
-
-
     @media screen and (max-width: 767px) {
-        .SprdMain .sprd-breadcrumb {
-            overflow-x: hidden !important;
+        #sprd-header-container {
+            padding-top: 100px;
+        }
+    }
+    /* menu bar in spreadshop interface */
+    .sprd-burgermenu__inner {
+        padding-top: 66px;
+    }
+    @media screen and (max-width: 767px) {
+        .sprd-burgermenu__inner {
+            padding-top: 100px;
         }
     }
 
-    body {
-        margin-top: 80px !important;
-        padding-bottom: 100px !important;
+    .sprd-header__title {
+      text-transform: uppercase;
+    }
+
+    .sprd-nav-link:hover {
+      color: #F46DCE;
     }
 
     .sprd-button.sprd-primary {
@@ -121,120 +100,16 @@
         letter-spacing: 1.8px !important;
     }
 
-    .SprdMain .sprd-detail-columns {
-        display: none !important;
-    }
-
-    .SprdMain .sprd-promo-box {
-        border-color: #f46dce !important;
-        color: #f46dce !important;
-    }
-
-    .sprd-department-filter__departments sprd-bg-m1 sprd-c-s3 {
-        position: relative !important;
-    }
-
-    .SprdMain .sprd-listpage__title {
-        margin-top: 100px !important;
-    }
-
-    .SprdMain .sprd-listpage .sprd-button {
-        /* What is this pointing to? */
-        display: none !important;
-    }
-
-    .SprdMain .sprd-basket-footer__button:hover {
-        opacity: 0.5 !important;
-    }
-
-    /* Shop and About section */
-    .sprd-department-filter {
-        display: none !important;
-    }
-
     .sprd-detail-cta__button:hover {
         opacity: 0.5 !important;
     }
 
-    /* do we need this? it's not on hte page */
-    .sprd-basket__dropdown .sprd-basket-button {
-        /* position: relative !important;    */
-        align-content: center !important;
+    /* shop now button in spreadshop */
+    a.sprd-button:hover {
+        color: #F46DCE;
+        background: #ffffff;
+        border: 1px solid #F46DCE;
     }
-
-
-    .SprdMain .sprd-promo-expander {
-        background-color: #f46dce !important;
-    }
-
-
-    .sprd-btn-primary {
-        background-color: #6DCEF4 !important;
-        border: #6DCEF4 !important;
-    }
-
-    /* /* .sprd-btn-secondary {
-        background-color: #6DCEF440 !important;
-    } */
-
-    .sprd-startpage-preview-tiles__text {
-        padding: 0px;
-    }
-
-    .sprd-burgermenu {
-        z-index: 9999 !important;
-    }
-
-    /* #sprd-main {
-        z-index: !important;
-        position: relative !important;
-        height: auto !important;
-        min-height: 100vh !important;
-        box-sizing: border-box !important;
-        font-size: 1rem !important;
-    } */
-
-    .sprd-burgermenu__inner {
-        margin-top: 80px;
-    }
-
-    a.sprd-burgermenu__title {
-        display: none !important;
-    }
-
-    .SprdMain .sprd-burgermenu__close {
-        float: right !important;
-    }
-
-    .SprdMain .sprd-burgermenu__header {
-        display: flex !important;
-        float: right !important;
-        border-bottom-style: none !important;
-    }
-
-    
-    .sprd-department-filter {
-        display: none !important;
-    }
-
-    .sprd-department-filter__openmenu {
-        display: none !important;
-    }
-
-
-    .SprdMain .sprd-listpage__header {
-        height: 10px !important;
-    }
-
-    .SprdMain .sprd-header {
-        padding-top: 70px !important;
-    }
-
-
-    .navbar-nav {
-        flex-direction: row !important
-    }
-
     
     #menu {
         color: #f46dce !important;
@@ -244,20 +119,25 @@
         margin-left: 10px;
     }
 
+     /* footer */
+     .SprdMain .sprd-info-footer, .sprd-service-footer {
+        display: none !important;
+    }
 
+    /* link that says to open up your own spreadshop */
+    #buttonSpreadshirt {
+        display: none !important;
+    }
+    /* END SPREADSHOP */
 
-    /* START START START home page - navbar */
-
-
+    /* home page - navbar */
     .navbar-custom {
         z-index: 9999 !important;
     }
 
-
     .navbar-nav {
         text-align: right;
     }
-
 
     .navbar-custom {
         /* background-color: rgb(19, 174, 240, 0.1); */
@@ -266,7 +146,6 @@
     }
 
     .nav-item {
-        /* justify-content: right; */
         margin-left: 20px;
     }
 
