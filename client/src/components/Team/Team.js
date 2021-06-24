@@ -33,7 +33,7 @@ function Team() {
             Name={"Rodrigo Costa"}
             // Text={"Physics grad with a passion for math and machine learning. Also works in the Financial Industry managing technology for eTrading, API Dev, data minning and market models."}
             Title={"Data Scientist"}
-            Image={require("../../assets/images/team/team1.png")}
+            Image={require("../../assets/images/team/team1.jpg")}
             Github={"http://github.com/costargc"}
             LinkedIn={"https://www.linkedin.com/in/costargc/en"}
             Email={"costa@upself.io"}
@@ -53,7 +53,7 @@ function Team() {
             Name={"Matt Gilliland"}
             // Text={"Physics grad with a passion for math and machine learning. Also works in the Financial Industry managing technology for eTrading, API Dev, data minning and market models."}
             Title={"Lead Software Engineer"}
-            Image={require("../../assets/images/team/team2.png")}
+            Image={require("../../assets/images/team/team2.jpg")}
             Github={"https://github.com/mgilliland23"}
             LinkedIn={"https://www.linkedin.com/in/matthew-gilliland-77695595/"}
             Email={"matt@upself.io"}
